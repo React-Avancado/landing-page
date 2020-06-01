@@ -1,0 +1,25 @@
+name: CI
+
+on: [push]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install Packages
+        run: yarn
+
+      - name: Check Lint
+        run: yarn lint
+
+      - name: Check Buld
+        run: yarn build
+
+      - name: Run Tests
+        run: yarn test
