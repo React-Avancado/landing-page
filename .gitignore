@@ -112,3 +112,7 @@ Temporary Items
 
 
 # End of https://www.gitignore.io/api/macos
+
+## SW stuff
+public/sw.js
+public/workbox-*.js
