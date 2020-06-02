@@ -26,7 +26,7 @@ const App = ({ Component, pageProps }) => {
 
         {/* Facebook. Linkedin, others */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://reactavancado.com.br/" />
+        <meta property="og:url" content="https://reactavancado.com.br" />
         <meta
           property="og:title"
           content="React Avançado - Crie aplicações reais com NextJS, GraphQL e mais."
@@ -42,7 +42,7 @@ const App = ({ Component, pageProps }) => {
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://reactavancado.com.br/" />
+        <meta property="twitter:url" content="https://reactavancado.com.br" />
         <meta
           property="twitter:title"
           content="React Avançado - Crie aplicações reais com NextJS, GraphQL e mais."
