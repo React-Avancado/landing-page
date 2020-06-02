@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
-import { theme } from 'utils/theme'
 
-import GlobalStyle from 'utils/global.styles'
+import { theme } from 'styles/theme'
+import GlobalStyle from 'styles/global.styles'
 
 const App = ({ Component, pageProps }) => {
   return (
