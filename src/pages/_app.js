@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import Router from 'next/router'
 import Head from 'next/head'
 import GlobalStyle from './global.styles'
@@ -73,6 +74,11 @@ const App = ({ Component, pageProps }) => {
       <Component {...pageProps} />
     </>
   )
+}
+
+App.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object
 }
 
 export default App
