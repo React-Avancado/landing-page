@@ -1,21 +1,21 @@
 {
-  "name": "Simple NextJS Quick Start",
-  "short_name": "NextJS Quick Start",
+  "name": "React Avançado - Crie aplicações reais com NextJS, GraphQL e mais.",
+  "short_name": "ReactJS Avançado",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/img/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/img/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "background_color": "#FFFFFF",
-  "description": "make your Next.js application work offline using service workers via Google's workbox",
+  "background_color": "#06092B",
+  "description": "Aprenda a criar um ecommerce completo, indo do backend ao frontend utilizando tecnologias como ReactJS, NextJS, Strapi, GraphQL, Apollo e muito mais!",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#000"
+  "theme_color": "#06092B"
 }
