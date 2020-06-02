@@ -80,6 +80,9 @@ typings/
 dist
 out
 
+### Windows
+*Zone.Identifier
+
 # Created by https://www.gitignore.io/api/macos
 
 ### macOS ###
