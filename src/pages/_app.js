@@ -1,11 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
+import { ThemeProvider } from 'styled-components'
+import { theme } from 'utils/theme'
+
 import GlobalStyle from './global.styles'
 
 const App = ({ Component, pageProps }) => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Head>
         <title>
           React Avançado - Crie aplicações reais com NextJS, GraphQL e mais.
@@ -64,7 +67,7 @@ const App = ({ Component, pageProps }) => {
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
 
