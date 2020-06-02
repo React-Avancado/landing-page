@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Nextjs quick start",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "eslint src",
     "dev": "next",
     "build": "next build",
