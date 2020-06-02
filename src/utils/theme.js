@@ -1,16 +1,18 @@
 export const theme = {
-  fontFamily:
-    "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-  fontBold: 600,
   container: '125rem',
-  fontSize: {
-    xxsmall: '1.4rem',
-    xsmall: '1.6rem',
-    small: '1.8rem',
-    medium: '2.2rem',
-    large: '2.6rem',
-    xlarge: '3.4rem',
-    xxlarge: '5.2rem'
+  font: {
+    family:
+      "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+    bold: 600,
+    sizes: {
+      xxsmall: '1.4rem',
+      xsmall: '1.6rem',
+      small: '1.8rem',
+      medium: '2.2rem',
+      large: '2.6rem',
+      xlarge: '3.4rem',
+      xxlarge: '5.2rem'
+    }
   },
   colors: {
     primary: '#F231A5',

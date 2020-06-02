@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import { theme } from 'utils/theme'
 
-import GlobalStyle from './global.styles'
+import GlobalStyle from 'utils/global.styles'
 
 const App = ({ Component, pageProps }) => {
   return (
