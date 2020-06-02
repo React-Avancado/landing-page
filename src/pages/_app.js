@@ -1,23 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import Router from 'next/router'
 import Head from 'next/head'
 import GlobalStyle from './global.styles'
 
-import { pageview } from 'utils/ga'
-
 const App = ({ Component, pageProps }) => {
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      pageview(url)
-    }
-
-    Router.events.on('routeChangeComplete', handleRouteChange)
-    return () => {
-      Router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [])
-
   return (
     <>
       <Head>
