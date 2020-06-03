@@ -1,5 +1,5 @@
 export const theme = {
-  container: '125rem',
+  container: '130rem',
   font: {
     family:
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
