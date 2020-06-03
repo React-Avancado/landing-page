@@ -17,7 +17,7 @@ export const theme = {
   colors: {
     primary: '#F231A5',
     secondary: '#3CD3C1',
-    mainBg: '#06092B',
+    mainBg: '#030518',
     boxBg: '#FAFAFA',
     texts: '#030517',
     muted: '#B5B5B5',

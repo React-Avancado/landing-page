@@ -1,6 +1,6 @@
 import React from 'react'
-import Main from 'components/Main'
+import Hero from 'components/Hero'
 
-const Index = () => <Main />
+const Index = () => <Hero />
 
 export default Index
