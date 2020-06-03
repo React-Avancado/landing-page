@@ -17,12 +17,13 @@ export const HeroWrapper = styled.header`
 export const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 15rem;
+  margin: 6rem auto 5rem;
 
   ${media.greaterThan('medium')`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 15rem auto;
   `}
 `
 
