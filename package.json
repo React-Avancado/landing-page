@@ -35,6 +35,7 @@
   "dependencies": {
     "next": "^9.4.4",
     "next-pwa": "^2.4.1",
+    "polished": "^3.6.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
