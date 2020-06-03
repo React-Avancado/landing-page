@@ -43,11 +43,11 @@ export const HeroTitle = styled.h1`
 `
 
 export const HeroDescription = styled.h2`
-  font-size: 2.2rem;
-  line-height: 3rem;
-  font-weight: 400;
-
   ${({ theme }) => css`
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: 400;
+
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xlarge};
       line-height: 5rem;
@@ -56,13 +56,12 @@ export const HeroDescription = styled.h2`
 `
 
 export const HeroImage = styled.img`
-  width: 34rem;
-
-  ${media.greaterThan('medium')`
-    width: 42rem;
-  `}
-
   ${({ theme }) => css`
     margin: ${theme.spacings.large} auto;
+    width: 34rem;
+
+    ${media.greaterThan('medium')`
+      width: 42rem;
+    `}
   `}
 `
