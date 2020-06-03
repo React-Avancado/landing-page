@@ -3,11 +3,12 @@ import media from 'styled-media-query'
 
 export const HeroWrapper = styled.header`
   ${({ theme }) => css`
-    margin: ${theme.spacings.large} auto;
+    margin: ${theme.spacings.medium} auto;
     padding: 0 ${theme.spacings.small};
     max-width: ${theme.container};
 
     ${media.greaterThan('medium')`
+      margin: ${theme.spacings.large} auto;
       padding: 0 ${theme.spacings.medium};
     `}
   `}
@@ -26,9 +27,15 @@ export const HeroContainer = styled.div`
 `
 
 export const HeroTextBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 58rem;
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+
+    ${media.greaterThan('medium')`
+      padding-right: ${theme.spacings.medium};
+    `}
+  `}
 `
 
 export const HeroTitle = styled.h1`
@@ -37,7 +44,7 @@ export const HeroTitle = styled.h1`
     font-weight: ${theme.font.bold};
 
     ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.xxlarge}
+      font-size: min(${theme.font.sizes.xxlarge}, 5vw);
     `}
   `}
 `
@@ -49,18 +56,26 @@ export const HeroDescription = styled.h2`
     font-weight: 400;
 
     ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.xlarge};
-      line-height: 5rem;
+      font-size: min(${theme.font.sizes.xlarge}, 3vw);
+      line-height: min(5rem, 4.5vw);
     `}
+  `}
+`
+
+export const HeroButtonWrapper = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    padding-top: ${theme.spacings.medium};
   `}
 `
 
 export const HeroImage = styled.img`
   ${({ theme }) => css`
     margin: ${theme.spacings.large} auto;
-    width: 34rem;
+    width: min(34rem, 100%);
 
     ${media.greaterThan('medium')`
+      margin: 0;
       width: 42rem;
     `}
   `}
