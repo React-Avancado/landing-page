@@ -3,12 +3,12 @@ import { darken } from 'polished'
 import media from 'styled-media-query'
 
 export const ButtonWrapper = styled.a`
-  ${({ theme }) => css`
+  ${({ theme, wide }) => css`
     background: ${theme.colors.primary};
     border-radius: 0.4rem;
     color: ${theme.colors.white};
     font-size: ${theme.font.sizes.xsmall};
-    padding: 1.3rem ${({ wide }) => (wide ? '3rem' : '0')};
+    padding: 1.3rem ${wide ? '3rem' : '0'};
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
