@@ -3,9 +3,8 @@ import media from 'styled-media-query'
 
 export const HeroWrapper = styled.header`
   ${({ theme }) => css`
-    margin: ${theme.spacings.medium} auto;
-    padding: 0 ${theme.spacings.small};
-    max-width: ${theme.container};
+    margin-top: ${theme.spacings.medium};
+    margin-bottom: ${theme.spacings.medium};
 
     ${media.greaterThan('medium')`
       margin: ${theme.spacings.large} auto;

@@ -3,9 +3,8 @@ import media from 'styled-media-query'
 
 export const TechSectionWrapper = styled.section`
   ${({ theme }) => css`
-    margin: auto;
-    max-width: ${theme.container};
-    padding: 12rem ${theme.spacings.small};
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 
     ${media.greaterThan('large')`
       flex-direction: row;
@@ -21,30 +20,26 @@ export const TechIconsContainer = styled.div`
 `
 
 export const TechIcon = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 6.2rem;
-    text-align: center;
-    margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 6.2rem;
+  text-align: center;
+  margin: 1.5rem;
 
-    ${media.greaterThan('medium')`
-      margin: 5rem;
-      flex: 1 1 12.8rem;
-    `}
+  ${media.greaterThan('medium')`
+    margin: 5rem;
+    flex: 1 1 12.8rem;
   `}
 `
 
 export const TechIcons = styled.img`
-  ${({ theme }) => css`
-    width: 6.2rem;
-    height: 6.2rem;
+  width: 6.2rem;
+  height: 6.2rem;
 
-    ${media.greaterThan('medium')`
-      width: 12.8rem;
-      height: 12.8rem;
-    `}
+  ${media.greaterThan('medium')`
+    width: 12.8rem;
+    height: 12.8rem;
   `}
 `
 

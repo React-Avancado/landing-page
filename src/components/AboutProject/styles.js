@@ -14,9 +14,6 @@ export const AboutProjectContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    margin: auto;
-    max-width: ${theme.container};
-    padding: 0 ${theme.spacings.small};
     transform: skewY(-2deg);
 
     ${media.greaterThan('large')`

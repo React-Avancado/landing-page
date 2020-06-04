@@ -1,5 +1,8 @@
 export const theme = {
-  container: '130rem',
+  grid: {
+    container: '130rem',
+    gutter: '3.2rem'
+  },
   font: {
     family:
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
