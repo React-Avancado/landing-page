@@ -16,7 +16,7 @@ const AboutProject = () => (
           />
         </S.AboutProjectBlock>
         <S.AboutProjectBlock>
-          <Heading color="black">O que iremos construir</Heading>
+          <Heading>O que iremos construir</Heading>
           <S.AboutProjetText>
             <p>
               Iremos criar um e-commerce de jogos completo, incluindo toda a

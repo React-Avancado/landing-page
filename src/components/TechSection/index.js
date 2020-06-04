@@ -8,7 +8,7 @@ import Container from 'components/Container'
 const TechSection = () => (
   <S.TechSectionWrapper>
     <Container>
-      <Heading>Tecnologias utilizadas</Heading>
+      <Heading reverseColor>Tecnologias utilizadas</Heading>
       <S.TechIconsContainer>
         {icons.map(({ name, image, index }) => (
           <S.TechIcon key={index}>
