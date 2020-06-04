@@ -36,6 +36,7 @@ export const TextBlock = styled.div`
     margin: auto;
 
     ${media.greaterThan('medium')`
+      margin: initial;
       padding-right: ${theme.spacings.medium};
     `}
   `}
