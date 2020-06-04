@@ -53,7 +53,6 @@ export const AboutProjetText = styled.div`
 
     p {
       color: ${theme.colors.texts};
-      font-size: ${theme.font.sizes.small};
       margin-bottom: ${theme.spacings.small};
     }
 

@@ -50,7 +50,7 @@ export const TechIconsName = styled.p`
 
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.small};
-      font-weight: ${theme.font.bold};;
+      font-weight: ${theme.font.bold};
     `}
   `}
 `
