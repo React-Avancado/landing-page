@@ -6,6 +6,7 @@ export const Box = styled.section`
     color: ${theme.colors.black};
     background-color: ${theme.colors.white};
     padding: ${theme.spacings.small};
+    border-radius: ${theme.border.radius};
 
     ${media.greaterThan('small')`
       padding: ${theme.spacings.large};

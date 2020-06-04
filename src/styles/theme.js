@@ -3,6 +3,9 @@ export const theme = {
     container: '130rem',
     gutter: '3.2rem'
   },
+  border: {
+    radius: '0.8rem'
+  },
   font: {
     family:
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
@@ -25,7 +28,8 @@ export const theme = {
     texts: '#030517',
     muted: '#B5B5B5',
     white: '#FFFFFF',
-    black: '#000000'
+    black: '#000000',
+    gray: '#B5B5B5'
   },
   spacings: {
     xxsmall: '0.8rem',
