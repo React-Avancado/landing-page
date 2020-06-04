@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const AboutProjectWrapper = styled.section`
+export const Wrapper = styled.section`
   ${({ theme }) => css`
     display: flex;
     background: ${theme.colors.white};
@@ -10,7 +10,7 @@ export const AboutProjectWrapper = styled.section`
   `}
 `
 
-export const AboutProjectContainer = styled.div`
+export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ export const AboutProjectContainer = styled.div`
   `}
 `
 
-export const AboutProjectBlock = styled.div`
+export const Block = styled.div`
   ${({ theme }) => css`
     flex: 1;
 
@@ -35,7 +35,7 @@ export const AboutProjectBlock = styled.div`
   `}
 `
 
-export const AboutProjectImage = styled.img`
+export const Image = styled.img`
   ${({ theme }) => css`
     display: flex;
     max-width: min(60rem, 100%);
@@ -47,7 +47,7 @@ export const AboutProjectImage = styled.img`
   `}
 `
 
-export const AboutProjetText = styled.div`
+export const Text = styled.div`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.small};
 

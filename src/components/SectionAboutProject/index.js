@@ -5,19 +5,19 @@ import Container from 'components/Container'
 
 import * as S from './styles'
 
-const AboutProject = () => (
-  <S.AboutProjectWrapper>
+const SectionAboutProject = () => (
+  <S.Wrapper>
     <Container>
-      <S.AboutProjectContainer>
-        <S.AboutProjectBlock>
-          <S.AboutProjectImage
+      <S.Container>
+        <S.Block>
+          <S.Image
             src="/img/project.png"
             alt="2 telas sobrepostas, na frente a interface do ecommerce e atrás o CMS"
           />
-        </S.AboutProjectBlock>
-        <S.AboutProjectBlock>
+        </S.Block>
+        <S.Block>
           <Heading>O que iremos construir</Heading>
-          <S.AboutProjetText>
+          <S.Text>
             <p>
               Iremos criar um e-commerce de jogos completo, incluindo toda a
               parte de pagamentos e área do client. Os usuário poderão buscar,
@@ -37,11 +37,11 @@ const AboutProject = () => (
               prezando a qualidade do código e obviamente, teremos{' '}
               <strong>testes em tudo!</strong>
             </p>
-          </S.AboutProjetText>
-        </S.AboutProjectBlock>
-      </S.AboutProjectContainer>
+          </S.Text>
+        </S.Block>
+      </S.Container>
     </Container>
-  </S.AboutProjectWrapper>
+  </S.Wrapper>
 )
 
-export default AboutProject
+export default SectionAboutProject

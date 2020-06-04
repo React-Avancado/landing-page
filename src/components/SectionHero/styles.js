@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const HeroWrapper = styled.header`
+export const Wrapper = styled.header`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.medium};
     margin-bottom: ${theme.spacings.medium};
@@ -13,7 +13,7 @@ export const HeroWrapper = styled.header`
   `}
 `
 
-export const HeroContainer = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   margin: 6rem auto 5rem;
@@ -26,7 +26,7 @@ export const HeroContainer = styled.div`
   `}
 `
 
-export const HeroTextBlock = styled.div`
+export const TextBlock = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ export const HeroTextBlock = styled.div`
   `}
 `
 
-export const HeroTitle = styled.h1`
+export const Title = styled.h1`
   ${({ theme }) => css`
     font-size: 3.8rem;
     font-weight: ${theme.font.bold};
@@ -49,7 +49,7 @@ export const HeroTitle = styled.h1`
   `}
 `
 
-export const HeroDescription = styled.h2`
+export const Description = styled.h2`
   ${({ theme }) => css`
     font-size: 2.2rem;
     line-height: 3rem;
@@ -62,14 +62,14 @@ export const HeroDescription = styled.h2`
   `}
 `
 
-export const HeroButtonWrapper = styled.div`
+export const ButtonWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     padding-top: ${theme.spacings.medium};
   `}
 `
 
-export const HeroImage = styled.img`
+export const Image = styled.img`
   ${({ theme }) => css`
     margin: ${theme.spacings.large} auto;
     width: min(34rem, 100%);

@@ -25,7 +25,7 @@ const list = [
   'Rotas simples e dinâmicas'
 ]
 
-const Concepts = () => (
+const SectionConcepts = () => (
   <Container>
     <S.Box>
       <Heading lineBottom>Conceitos que você irá aprender</Heading>
@@ -38,4 +38,4 @@ const Concepts = () => (
   </Container>
 )
 
-export default Concepts
+export default SectionConcepts

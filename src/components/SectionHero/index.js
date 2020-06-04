@@ -9,31 +9,31 @@ import Container from 'components/Container'
 
 const onClick = () => event('click', 'cta', 'hero button')
 
-const Hero = () => (
-  <S.HeroWrapper>
+const SectionHero = () => (
+  <S.Wrapper>
     <Container>
       <Logo />
 
-      <S.HeroContainer>
-        <S.HeroTextBlock>
-          <S.HeroTitle>React Avançado</S.HeroTitle>
-          <S.HeroDescription>
+      <S.Content>
+        <S.TextBlock>
+          <S.Title>React Avançado</S.Title>
+          <S.Description>
             Crie aplicações reais com NextJS, GraphQL e mais!
-          </S.HeroDescription>
-          <S.HeroButtonWrapper>
+          </S.Description>
+          <S.ButtonWrapper>
             <Button href="#" onClick={onClick} wide>
               Garantir minha vaga
             </Button>
-          </S.HeroButtonWrapper>
-        </S.HeroTextBlock>
+          </S.ButtonWrapper>
+        </S.TextBlock>
 
-        <S.HeroImage
+        <S.Image
           src="/img/hero-illustration.svg"
           alt="Um desenvolvedor em frente ao computador"
         />
-      </S.HeroContainer>
+      </S.Content>
     </Container>
-  </S.HeroWrapper>
+  </S.Wrapper>
 )
 
-export default Hero
+export default SectionHero

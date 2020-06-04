@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const TechSectionWrapper = styled.section`
+export const Wrapper = styled.section`
   ${({ theme }) => css`
     padding-top: 12rem;
     padding-bottom: 12rem;
@@ -13,13 +13,13 @@ export const TechSectionWrapper = styled.section`
   `}
 `
 
-export const TechIconsContainer = styled.div`
+export const IconsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 `
 
-export const TechIcon = styled.div`
+export const Icon = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@ export const TechIcon = styled.div`
   `}
 `
 
-export const TechIcons = styled.img`
+export const Icons = styled.img`
   width: 6.2rem;
   height: 6.2rem;
 
@@ -43,7 +43,7 @@ export const TechIcons = styled.img`
   `}
 `
 
-export const TechIconsName = styled.p`
+export const IconsName = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xsmall};
     margin-top: ${theme.spacings.xxsmall};

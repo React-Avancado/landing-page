@@ -1,16 +1,16 @@
 import React from 'react'
-import Hero from 'components/Hero'
-import AboutProject from 'components/AboutProject'
-import TechSection from 'components/TechSection'
-import Concepts from 'components/Concepts'
+import SectionHero from 'components/SectionHero'
+import SectionAboutProject from 'components/SectionAboutProject'
+import SectionTech from 'components/SectionTech'
+import SectionConcepts from 'components/SectionConcepts'
 import SectionModules from 'components/SectionModules'
 
 const Index = () => (
   <>
-    <Hero />
-    <AboutProject />
-    <TechSection />
-    <Concepts />
+    <SectionHero />
+    <SectionAboutProject />
+    <SectionTech />
+    <SectionConcepts />
     <SectionModules />
   </>
 )
