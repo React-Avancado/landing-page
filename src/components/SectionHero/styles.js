@@ -3,10 +3,12 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.header`
   ${({ theme }) => css`
+    text-align: center;
     margin-top: ${theme.spacings.medium};
     margin-bottom: ${theme.spacings.medium};
 
     ${media.greaterThan('medium')`
+      text-align: left;
       margin: ${theme.spacings.large} auto;
       padding: 0 ${theme.spacings.medium};
     `}
@@ -31,6 +33,7 @@ export const TextBlock = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 60rem;
+    margin: auto;
 
     ${media.greaterThan('medium')`
       padding-right: ${theme.spacings.medium};
@@ -66,6 +69,12 @@ export const ButtonWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     padding-top: ${theme.spacings.medium};
+    margin: 0 auto;
+
+    ${media.greaterThan('medium')`
+      margin: 0;
+      padding-right: ${theme.spacings.medium};
+    `}
   `}
 `
 
