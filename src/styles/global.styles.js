@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     body {
       background-color: ${theme.colors.mainBg};
       color: ${theme.colors.white};
+      font-size: ${theme.font.sizes.small};
     }
   `}
 `

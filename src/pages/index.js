@@ -1,6 +1,18 @@
 import React from 'react'
-import Main from 'components/Main'
+import SectionHero from 'components/SectionHero'
+import SectionAboutProject from 'components/SectionAboutProject'
+import SectionTech from 'components/SectionTech'
+import SectionConcepts from 'components/SectionConcepts'
+import SectionModules from 'components/SectionModules'
 
-const Index = () => <Main />
+const Index = () => (
+  <>
+    <SectionHero />
+    <SectionAboutProject />
+    <SectionTech />
+    <SectionConcepts />
+    <SectionModules />
+  </>
+)
 
 export default Index
