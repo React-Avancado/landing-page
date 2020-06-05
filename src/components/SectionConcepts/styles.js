@@ -8,7 +8,7 @@ export const Box = styled.section`
     padding: ${theme.spacings.small};
     border-radius: ${theme.border.radius};
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       padding: ${theme.spacings.large};
     `}
   `}
@@ -16,7 +16,7 @@ export const Box = styled.section`
 
 export const List = styled.ul`
   ${({ theme }) => css`
-    padding: ${theme.spacings.small} ${theme.spacings.small} 0;
+    padding: ${theme.spacings.small} ${theme.spacings.xsmall} 0;
 
     ${media.greaterThan('small')`
       column-count: 2;
