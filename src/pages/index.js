@@ -4,6 +4,7 @@ import SectionAboutProject from 'components/SectionAboutProject'
 import SectionTech from 'components/SectionTech'
 import SectionConcepts from 'components/SectionConcepts'
 import SectionModules from 'components/SectionModules'
+import SectionAgenda from 'components/SectionAgenda'
 
 const Index = () => (
   <>
@@ -12,6 +13,7 @@ const Index = () => (
     <SectionTech />
     <SectionConcepts />
     <SectionModules />
+    <SectionAgenda />
   </>
 )
 
