@@ -10,8 +10,8 @@ const SectionTech = () => (
     <Container>
       <Heading reverseColor>Tecnologias utilizadas</Heading>
       <S.IconsContainer>
-        {icons.map(({ name, image, index }) => (
-          <S.Icon key={index}>
+        {icons.map(({ name, image }) => (
+          <S.Icon key={name}>
             <S.Icons src={`img/tech/${image}`} alt={name} />
             <S.IconsName>{name}</S.IconsName>
           </S.Icon>

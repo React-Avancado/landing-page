@@ -22,6 +22,7 @@ export const theme = {
   },
   colors: {
     primary: '#F231A5',
+    primaryHover: '#E20E8D',
     secondary: '#3CD3C1',
     mainBg: '#030518',
     boxBg: '#FAFAFA',
