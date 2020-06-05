@@ -4,8 +4,8 @@ const icons = [
     image: 'typescript.svg'
   },
   {
-    name: 'TypeScript',
-    image: 'typescript.svg'
+    name: 'React',
+    image: 'react.svg'
   },
   {
     name: 'NextJS',

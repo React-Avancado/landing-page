@@ -14,28 +14,31 @@ export const Wrapper = styled.section`
 `
 
 export const IconsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`
+  ${({ theme }) => css`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    column-gap: ${theme.spacings.small};
+    row-gap: ${theme.spacings.medium};
+    margin-top: ${theme.spacings.large};
 
-export const Icon = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1 6.2rem;
-  text-align: center;
-  margin: 1.5rem;
+    ${media.greaterThan('500px')`
+      grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    `}
 
-  ${media.greaterThan('medium')`
-    margin: 5rem;
-    flex: 1 1 12.8rem;
+    ${media.greaterThan('medium')`
+      column-gap: ${theme.spacings.xxlarge};
+      row-gap: ${theme.spacings.large};
+    `};
   `}
 `
 
+export const Icon = styled.div``
+
 export const Icons = styled.img`
-  width: 6.2rem;
-  height: 6.2rem;
+  width: 7rem;
+  height: 7rem;
+  transition: all 0.4s;
 
   ${media.greaterThan('medium')`
     width: 12.8rem;
@@ -44,11 +47,12 @@ export const Icons = styled.img`
 `
 
 export const IconsName = styled.p`
-  ${({ theme }) => css`
+  ${({ theme, mobile }) => css`
     font-size: ${theme.font.sizes.xsmall};
     margin-top: ${theme.spacings.xxsmall};
 
     ${media.greaterThan('medium')`
+      display: ${mobile ? 'none' : 'block'};
       font-size: ${theme.font.sizes.small};
       font-weight: ${theme.font.bold};
     `}
