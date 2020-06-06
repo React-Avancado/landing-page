@@ -9,7 +9,7 @@ export const Box = styled.section`
     border-radius: 0;
     background: ${theme.colors.white};
     padding: ${theme.spacings.medium};
-    margin: ${theme.spacings.large} auto ${theme.spacings.xxlarge};
+    margin: ${theme.spacings.large} auto ${theme.spacings.xlarge};
 
     ${media.greaterThan('720px')`
       max-width: 72rem;

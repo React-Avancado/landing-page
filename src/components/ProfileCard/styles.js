@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Card = styled.article`
   ${({ theme }) => css`
+    border-radius: ${theme.border.radius};
     background-color: ${theme.colors.white};
     padding: ${theme.spacings.medium};
     text-align: center;
@@ -46,10 +47,15 @@ export const SocialLinks = styled.ul`
 
 export const Link = styled.li`
   ${({ theme }) => css`
-    margin: 0 0.4rem;
     display: block;
     > a {
+      padding: ${theme.spacings.xxsmall};
       color: ${theme.colors.secondary};
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
     }
   `}
 `

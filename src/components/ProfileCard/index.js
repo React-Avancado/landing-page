@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { AiFillInstagram } from 'react-icons/ai'
 import { GrGithub } from 'react-icons/gr'
 import { FaBehance, FaTwitter } from 'react-icons/fa'
 
@@ -9,7 +8,6 @@ import * as S from './styles'
 
 const icons = {
   twitter: <FaTwitter />,
-  instagram: <AiFillInstagram />,
   github: <GrGithub />,
   behance: <FaBehance />
 }

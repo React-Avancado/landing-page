@@ -14,7 +14,7 @@ const profiles = [
       'Desenvolvedor Front-end há mais de 10 anos, tendo trabalhado em grandes empresas como Toptal, Globo.com e Huge. Tenho um blog com mais de 200 mil views por mês, além de ter diversos cursos na Udemy, alcançando a incrível marca de mais de 195 mil alunos!',
     socialLinks: [
       { slug: 'twitter', link: 'https://twitter.com/1' },
-      { slug: 'instagram', link: 'https://twitter.com/2' }
+      { slug: 'github', link: 'https://github.com/willianjusten' }
     ]
   },
   {
