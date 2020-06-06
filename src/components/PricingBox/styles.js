@@ -27,7 +27,6 @@ export const Ribbon = styled.span`
     position: absolute;
     top: ${theme.spacings.small};
     right: -1.5rem;
-    z-index: 2;
 
     &::after {
       content: '';
@@ -38,7 +37,6 @@ export const Ribbon = styled.span`
       width: 1.5rem;
       height: 1rem;
       clip-path: polygon(100% 0, 0 0, 0 100%);
-      z-index: 1;
     }
 
     ${media.lessThan('720px')`

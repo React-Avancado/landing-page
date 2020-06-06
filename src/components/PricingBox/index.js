@@ -5,7 +5,7 @@ import { event } from 'utils/ga'
 
 import * as S from './styles'
 
-const onClick = () => event('click', 'cta', 'hero button')
+const onClick = () => event('click', 'cta', 'pricing box button')
 
 const PricingBox = () => (
   <S.Box>

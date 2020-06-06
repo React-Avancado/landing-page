@@ -15,7 +15,7 @@ const Button = ({ children, wide, withPrice, href, onClick }) => (
 )
 
 Button.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
   wide: PropTypes.bool,
   withPrice: PropTypes.bool,
