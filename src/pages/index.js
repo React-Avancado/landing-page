@@ -5,6 +5,7 @@ import SectionTech from 'components/SectionTech'
 import SectionConcepts from 'components/SectionConcepts'
 import SectionModules from 'components/SectionModules'
 import SectionAgenda from 'components/SectionAgenda'
+import PricingBox from 'components/PricingBox'
 
 const Index = () => (
   <>
@@ -14,6 +15,7 @@ const Index = () => (
     <SectionConcepts />
     <SectionModules />
     <SectionAgenda />
+    <PricingBox />
   </>
 )
 

@@ -27,7 +27,6 @@ export const theme = {
     mainBg: '#030518',
     boxBg: '#FAFAFA',
     texts: '#030517',
-    muted: '#B5B5B5',
     white: '#FFFFFF',
     black: '#000000',
     gray: '#B5B5B5'
