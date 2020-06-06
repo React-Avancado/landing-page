@@ -7,6 +7,7 @@ import SectionModules from 'components/SectionModules'
 import SectionAgenda from 'components/SectionAgenda'
 import PricingBox from 'components/PricingBox'
 import SectionAboutUs from 'components/SectionAboutUs'
+import SectionReviews from 'components/SectionReviews'
 
 const Index = () => (
   <>
@@ -18,6 +19,7 @@ const Index = () => (
     <SectionAgenda />
     <PricingBox />
     <SectionAboutUs />
+    <SectionReviews />
   </>
 )
 
