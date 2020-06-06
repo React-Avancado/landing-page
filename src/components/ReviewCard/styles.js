@@ -1,11 +1,12 @@
 import styled, { css } from 'styled-components'
 
-export const Card = styled.article`
+export const Card = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.texts};
     border-radius: ${theme.border.radius};
     background-color: ${theme.colors.white};
     padding: ${theme.spacings.medium};
+    margin: 3rem 1.2rem;
   `}
 `
 
@@ -34,6 +35,7 @@ export const Name = styled.p`
 
 export const Text = styled.blockquote`
   ${({ theme }) => css`
+    display: grid;
     margin-top: ${theme.spacings.xsmall};
     font-size: ${theme.font.sizes.xsmall};
     line-height: ${theme.font.sizes.medium};

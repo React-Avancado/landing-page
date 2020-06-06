@@ -1,4 +1,5 @@
 import React from 'react'
+import Slider from 'react-slick'
 
 import Container from 'components/Container'
 import Heading from 'components/Heading'
@@ -30,22 +31,71 @@ const reviews = [
     image: `https://source.unsplash.com/60x60/?profile,face&${Math.random()}`,
     description:
       'A didática é ótima, professor sabe o que fala e como passar a informação da melhor maneira possível. Acabei consumindo +60% do curso no dia em que comprei, depois que comecei foi difícil parar rsrs nota mil!'
+  },
+  {
+    name: 'Karoline Medeiros',
+    image: `https://source.unsplash.com/60x60/?profile,face&${Math.random()}`,
+    description:
+      'A didática é ótima, professor sabe o que fala e como passar a informação da melhor maneira possível. Acabei consumindo +60% do curso no dia em que comprei, depois que comecei foi difícil parar rsrs nota mil!'
+  },
+  {
+    name: 'Karoline Medeiros',
+    image: `https://source.unsplash.com/60x60/?profile,face&${Math.random()}`,
+    description:
+      'A didática é ótima, professor sabe o que fala e como passar a informação da melhor maneira possível. Acabei consumindo +60% do curso no dia em que comprei, depois que comecei foi difícil parar rsrs nota mil!'
+  },
+  {
+    name: 'Karoline Medeiros',
+    image: `https://source.unsplash.com/60x60/?profile,face&${Math.random()}`,
+    description:
+      'A didática é ótima, professor sabe o que fala e como passar a informação da melhor maneira possível. Acabei consumindo +60% do curso no dia em que comprei, depois que comecei foi difícil parar rsrs nota mil!'
+  },
+  {
+    name: 'Karoline Medeiros',
+    image: `https://source.unsplash.com/60x60/?profile,face&${Math.random()}`,
+    description:
+      'A didática é ótima, professor sabe o que fala e como passar a informação da melhor maneira possível. Acabei consumindo +60% do curso no dia em que comprei, depois que comecei foi difícil parar rsrs nota mil!'
   }
 ]
+
+const settings = {
+  dots: true,
+  arrows: false,
+  slidesToShow: 2,
+  infinite: false,
+  speed: 500,
+  rows: 2,
+  slidesPerRow: 1,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        rows: 2,
+        slidesPerRow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+}
 
 const SectionReviews = () => (
   <Container>
     <Heading reverseColor>Junte-se a mais de 200 mil alunos</Heading>
 
     <S.Content>
-      {reviews.map(({ name, image, description }, index) => (
-        <ReviewCard
-          name={name}
-          image={image}
-          description={description}
-          id={index}
-        />
-      ))}
+      <Slider {...settings}>
+        {reviews.map(({ name, image, description }, index) => (
+          <ReviewCard
+            key={index}
+            name={name}
+            image={image}
+            description={description}
+            id={index}
+          />
+        ))}
+      </Slider>
     </S.Content>
   </Container>
 )
