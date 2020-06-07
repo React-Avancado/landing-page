@@ -14,6 +14,7 @@ const wrapperModifiers = {
   `,
 
   lineBottom: (theme) => css`
+    padding-left: 0;
     position: relative;
     margin-bottom: ${theme.spacings.medium};
     &::after {
@@ -21,7 +22,7 @@ const wrapperModifiers = {
       border-bottom: 5px solid ${theme.colors.primary};
       width: 5rem;
       position: absolute;
-      left: 1rem;
+      left: 0;
       bottom: -1rem;
     }
   `
