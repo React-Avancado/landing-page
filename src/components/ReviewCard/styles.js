@@ -15,14 +15,12 @@ export const User = styled.div`
   display: flex;
 `
 
-export const Image = styled.div`
-  ${({ src }) => css`
-    background: url(${src}) no-repeat center;
-    background-size: cover;
+export const Image = styled.picture`
+  img {
     width: 5.4rem;
     height: 5.4rem;
     border-radius: 100%;
-  `}
+  }
 `
 
 export const Name = styled.p`

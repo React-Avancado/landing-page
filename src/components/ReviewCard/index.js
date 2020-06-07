@@ -6,7 +6,14 @@ import * as S from './styles'
 const ReviewCard = ({ id, name, image, description }) => (
   <S.Card>
     <S.User>
-      <S.Image src={image} />
+      <S.Image>
+        <source
+          srcSet={require(`@images/reviews/${image}?webp`)}
+          type="image/webp"
+        />
+        <source srcSet={require(`@images/reviews/${image}`)} type="image/jpg" />
+        <img src={require(`@images/reviews/${image}`)} loading="lazy" />
+      </S.Image>
       <S.Name>{name}</S.Name>
     </S.User>
     <S.Text>

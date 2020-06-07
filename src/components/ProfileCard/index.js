@@ -14,7 +14,14 @@ const icons = {
 
 const ProfileCard = ({ name, role, image, socialLinks, description }) => (
   <S.Card key={name}>
-    <S.Image src={image} />
+    <S.Image>
+      <source
+        srcSet={require(`@images/authors/${image}?webp`)}
+        type="image/webp"
+      />
+      <source srcSet={require(`@images/authors/${image}`)} type="image/png" />
+      <img src={require(`@images/authors/${image}`)} loading="lazy" />
+    </S.Image>
     <S.Name>{name}</S.Name>
     <S.Role>{role}</S.Role>
     <S.SocialLinks>

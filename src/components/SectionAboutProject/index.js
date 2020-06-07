@@ -10,10 +10,14 @@ const SectionAboutProject = () => (
     <Container>
       <S.Container>
         <S.Block>
-          <S.Image
-            src="/img/project.png"
-            alt="2 telas sobrepostas, na frente a interface do ecommerce e atrás o CMS"
-          />
+          <S.Image>
+            <source
+              srcSet={require('@images/project.png?webp')}
+              type="image/webp"
+            />
+            <source srcSet={require('@images/project.png')} type="image/png" />
+            <img src={require('@images/project.png')} loading="lazy" />
+          </S.Image>
         </S.Block>
         <S.Block>
           <Heading>O que iremos construir</Heading>
