@@ -36,6 +36,7 @@ export const Name = styled.p`
 export const Text = styled.blockquote`
   ${({ theme }) => css`
     display: grid;
+    justify-items: end;
     margin-top: ${theme.spacings.xsmall};
     font-size: ${theme.font.sizes.xsmall};
     line-height: ${theme.font.sizes.medium};
@@ -64,6 +65,7 @@ export const Text = styled.blockquote`
       color: ${theme.colors.secondary};
       position: absolute;
       top: ${theme.spacings.xsmall};
+      left: 0;
     }
 
     > p {

@@ -1,5 +1,11 @@
 import styled, { css } from 'styled-components'
 
+export const Wrapper = styled.section`
+  ${({ theme }) => css`
+    padding: ${theme.spacings.large} 0 ${theme.spacings.medium};
+  `}
+`
+
 export const Content = styled.section`
   ${({ theme }) => css`
     margin: ${theme.spacings.medium} 0;
