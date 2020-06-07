@@ -9,6 +9,7 @@ import PricingBox from 'components/PricingBox'
 import SectionAboutUs from 'components/SectionAboutUs'
 import SectionReviews from 'components/SectionReviews'
 import SectionFaq from 'components/SectionFaq'
+import Footer from 'components/Footer'
 
 const Index = () => (
   <>
@@ -22,6 +23,7 @@ const Index = () => (
     <SectionAboutUs />
     <SectionReviews />
     <SectionFaq />
+    <Footer />
   </>
 )
 

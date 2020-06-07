@@ -1,19 +1,26 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.white};
     color: ${theme.colors.texts};
-    padding: ${theme.spacings.medium} 0;
+    padding: ${theme.spacings.medium} 0 ${theme.spacings.xlarge};
+    transform: skewY(4deg);
+    margin-top: ${theme.spacings.xlarge};
 
     ${media.greaterThan('medium')`
-      padding: ${theme.spacings.xlarge} 0;
+      margin-top: ${theme.spacings.xlarge};
+      padding: ${theme.spacings.xlarge} 0 ${theme.spacings.xxlarge};
     `}
   `}
 `
 
 export const Content = styled.div`
+  transform: skewY(-4deg);
+`
+
+export const Questions = styled.div`
   ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr;
@@ -28,6 +35,8 @@ export const Content = styled.div`
     `}
   `}
 `
+
+export const Question = styled.div``
 
 export const ExtraQuestion = styled.div`
   ${({ theme }) => css`
