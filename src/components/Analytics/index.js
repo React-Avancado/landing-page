@@ -4,6 +4,7 @@ const Analytics = () => (
   <>
     <script
       async
+      rel="dns-prefetch"
       src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING}`}
     />
     <script

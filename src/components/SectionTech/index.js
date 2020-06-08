@@ -12,7 +12,7 @@ const SectionTech = () => (
       <S.IconsContainer>
         {icons.map(({ name, image }) => (
           <S.Icon key={name}>
-            <S.Icons src={`img/tech/${image}`} alt={name} />
+            <S.Icons src={`img/tech/${image}`} alt={name} loading="lazy" />
             <S.IconsName>{name}</S.IconsName>
           </S.Icon>
         ))}

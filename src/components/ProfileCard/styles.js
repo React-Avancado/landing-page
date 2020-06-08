@@ -9,15 +9,15 @@ export const Card = styled.article`
   `}
 `
 
-export const Image = styled.div`
-  ${({ theme, src }) => css`
-    background: url(${src}) no-repeat center;
-    background-size: cover;
-    width: 12.5rem;
-    height: 12.5rem;
-    border-radius: 100%;
-    margin: auto;
-    margin-bottom: ${theme.spacings.xsmall};
+export const Image = styled.picture`
+  ${({ theme }) => css`
+    img {
+      width: 12.5rem;
+      height: 12.5rem;
+      border-radius: 100%;
+      margin: auto;
+      margin-bottom: ${theme.spacings.xsmall};
+    }
   `}
 `
 

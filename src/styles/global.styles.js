@@ -1,6 +1,14 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-v9-latin-regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
   * {
     margin: 0;
     padding: 0;

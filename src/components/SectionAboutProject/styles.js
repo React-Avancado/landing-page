@@ -12,39 +12,30 @@ export const Wrapper = styled.section`
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: ${theme.spacings.medium};
     transform: skewY(-2deg);
 
     ${media.greaterThan('large')`
-      flex-direction: row;
+    grid-template-columns: 1fr 1fr;
       padding: 0 ${theme.spacings.medium};
     `}
   `}
 `
 
-export const Block = styled.div`
-  ${({ theme }) => css`
-    flex: 1;
+export const Image = styled.picture`
+  img {
+    ${({ theme }) => css`
+      display: block;
+      max-width: min(60rem, 100%);
+      margin: 0 auto ${theme.spacings.small};
 
-    ${media.greaterThan('large')`
-      &:last-child {
-        padding-left: ${theme.spacings.xlarge};
-      }
+      ${media.greaterThan('large')`
+        margin: 0 auto;
+      `}
     `}
-  `}
-`
-
-export const Image = styled.img`
-  ${({ theme }) => css`
-    display: flex;
-    max-width: min(60rem, 100%);
-    margin: 0 auto ${theme.spacings.small};
-
-    ${media.greaterThan('large')`
-      margin: 0 auto;
-    `}
-  `}
+  }
 `
 
 export const Text = styled.div`

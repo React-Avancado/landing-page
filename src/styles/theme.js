@@ -29,7 +29,7 @@ export const theme = {
     texts: '#030517',
     white: '#FFFFFF',
     black: '#000000',
-    gray: '#B5B5B5'
+    gray: '#7B7373'
   },
   spacings: {
     xxsmall: '0.8rem',
