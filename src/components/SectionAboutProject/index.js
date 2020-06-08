@@ -16,7 +16,11 @@ const SectionAboutProject = () => (
               type="image/webp"
             />
             <source srcSet={require('@images/project.png')} type="image/png" />
-            <img src={require('@images/project.png')} loading="lazy" />
+            <img
+              src={require('@images/project.png')}
+              loading="lazy"
+              alt="Tela do ecommerce com uma imagem do CMS por trás"
+            />
           </S.Image>
         </S.Block>
         <S.Block>

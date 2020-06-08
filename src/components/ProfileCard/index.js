@@ -20,7 +20,11 @@ const ProfileCard = ({ name, role, image, socialLinks, description }) => (
         type="image/webp"
       />
       <source srcSet={require(`@images/authors/${image}`)} type="image/png" />
-      <img src={require(`@images/authors/${image}`)} loading="lazy" />
+      <img
+        src={require(`@images/authors/${image}`)}
+        loading="lazy"
+        alt={name}
+      />
     </S.Image>
     <S.Name>{name}</S.Name>
     <S.Role>{role}</S.Role>

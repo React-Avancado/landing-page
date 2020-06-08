@@ -12,7 +12,11 @@ const ReviewCard = ({ id, name, image, description }) => (
           type="image/webp"
         />
         <source srcSet={require(`@images/reviews/${image}`)} type="image/jpg" />
-        <img src={require(`@images/reviews/${image}`)} loading="lazy" />
+        <img
+          src={require(`@images/reviews/${image}`)}
+          loading="lazy"
+          alt={name}
+        />
       </S.Image>
       <S.Name>{name}</S.Name>
     </S.User>
