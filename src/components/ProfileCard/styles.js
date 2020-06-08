@@ -10,15 +10,15 @@ export const Card = styled.article`
 `
 
 export const Image = styled.picture`
-  img {
-    ${({ theme }) => css`
+  ${({ theme }) => css`
+    img {
       width: 12.5rem;
       height: 12.5rem;
       border-radius: 100%;
       margin: auto;
       margin-bottom: ${theme.spacings.xsmall};
-    `}
-  }
+    }
+  `}
 `
 
 export const Name = styled.div`

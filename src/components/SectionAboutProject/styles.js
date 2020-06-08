@@ -24,8 +24,6 @@ export const Container = styled.div`
   `}
 `
 
-export const Block = styled.div``
-
 export const Image = styled.picture`
   img {
     ${({ theme }) => css`
