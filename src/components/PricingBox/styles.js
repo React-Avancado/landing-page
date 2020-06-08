@@ -58,7 +58,7 @@ export const Prices = styled.div`
   `}
 `
 
-export const FullPrice = styled.h4`
+export const FullPrice = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.gray};
     font-size: ${theme.font.sizes.large};
@@ -68,7 +68,7 @@ export const FullPrice = styled.h4`
   `}
 `
 
-export const DiscountPrice = styled.h3`
+export const DiscountPrice = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.primary};
     font-size: ${theme.font.sizes.xxlarge};
@@ -110,9 +110,9 @@ export const BenefitsItem = styled.li`
 export const ButtonFullPrice = styled.span`
   ${({ theme }) => css`
     text-decoration: line-through;
-    opacity: 0.7;
+    opacity: 0.9;
     margin-right: ${theme.spacings.xxsmall};
-    font-size: ${theme.font.sizes.xxsmall};
+    font-size: ${theme.font.sizes.xsmall};
   `}
 `
 
