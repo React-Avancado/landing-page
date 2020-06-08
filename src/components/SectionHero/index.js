@@ -18,7 +18,7 @@ const SectionHero = () => (
         <S.TextBlock>
           <S.Title>React Avançado</S.Title>
           <S.Description>
-            Crie aplicações reais com NextJS, GraphQL e mais!
+            Crie aplicações reais com NextJS, Strapi, GraphQL e mais!
           </S.Description>
           <S.ButtonWrapper>
             <Button href="#" onClick={onClick} wide>
@@ -29,7 +29,7 @@ const SectionHero = () => (
 
         <S.Image
           src="/img/hero-illustration.svg"
-          alt="Um desenvolvedor em frente ao computador"
+          alt="Ilustração de um desenvolvedor em frente a um computador com várias linhas de código."
         />
       </S.Content>
     </Container>
