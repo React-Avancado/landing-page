@@ -21,7 +21,7 @@ export const theme = {
     }
   },
   colors: {
-    primary: '#F231A5',
+    primary: '#CA1E84',
     primaryHover: '#E20E8D',
     secondary: '#3CD3C1',
     mainBg: '#030518',
@@ -29,7 +29,7 @@ export const theme = {
     texts: '#030517',
     white: '#FFFFFF',
     black: '#000000',
-    gray: '#B5B5B5'
+    gray: '#7B7373'
   },
   spacings: {
     xxsmall: '0.8rem',

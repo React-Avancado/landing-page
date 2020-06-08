@@ -43,8 +43,8 @@ export const ExtraQuestion = styled.div`
     margin-top: ${theme.spacings.medium};
 
     a {
-      border-bottom: 1px solid ${theme.colors.secondary};
-      color: ${theme.colors.secondary};
+      border-bottom: 1px solid ${theme.colors.primary};
+      color: ${theme.colors.primary};
       text-decoration: none;
     }
 
