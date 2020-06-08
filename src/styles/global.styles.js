@@ -3,11 +3,10 @@ import { createGlobalStyle, css } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Poppins';
-    font-style: normal;
+    src: url('/fonts/poppins-v9-latin-regular.woff2');
     font-weight: 400;
-    src: local('Poppins Regular'), local('Poppins-Regular'),
-        url('/fonts/poppins-v9-latin-regular.woff2') format('woff2'),
-        url('/fonts/poppins-v9-latin-regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
   }
 
   * {
