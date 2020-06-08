@@ -18,7 +18,7 @@ export const List = styled.ul`
   ${({ theme }) => css`
     padding: ${theme.spacings.small} ${theme.spacings.xsmall} 0;
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       column-count: 2;
     `}
 
