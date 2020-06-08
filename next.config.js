@@ -5,12 +5,14 @@ const optimizedImages = require('next-optimized-images')
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = withPlugins([
-  withPWA,
-  {
-    pwa: {
-      dest: 'public',
-      disable: !isProd
+  [
+    withPWA,
+    {
+      pwa: {
+        dest: 'public',
+        disable: !isProd
+      }
     }
-  },
-  [optimizedImages]
+  ],
+  optimizedImages
 ])
