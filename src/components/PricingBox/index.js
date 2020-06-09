@@ -1,11 +1,13 @@
 import React from 'react'
 
-import Button from 'components/Button'
-import { event } from 'utils/ga'
+import Newsletter from 'components/Newsletter'
 
 import * as S from './styles'
 
-const onClick = () => event('click', 'cta', 'pricing box button')
+// Descomentar após o lançamento e remover a Newsletter!
+// import Button from 'components/Button'
+// import { event } from 'utils/ga'
+// const onClick = () => event('click', 'cta', 'pricing box button')
 
 const PricingBox = () => (
   <S.Box>
@@ -32,13 +34,16 @@ const PricingBox = () => (
       </S.BenefitsItem>
     </S.BenefitsList>
 
-    <Button href="#" onClick={onClick} withPrice>
+    {/* Descomentar após o lançamento! Não esqueça de editar a url! */}
+    {/* <Button href="#" onClick={onClick} withPrice>
       <p>Comprar o curso</p>
       <div>
         <S.ButtonFullPrice>R$579</S.ButtonFullPrice>
         <S.ButtonDiscountPrice>R$279</S.ButtonDiscountPrice>
       </div>
-    </Button>
+    </Button> */}
+
+    <Newsletter />
   </S.Box>
 )
 
