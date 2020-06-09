@@ -14,7 +14,7 @@ const Newsletter = () => {
       <S.Text>Deseja receber um aviso quando lançar?</S.Text>
       <MailchimpSubscribe
         url={url}
-        render={({ subscribe, status, message }) => {
+        render={({ subscribe, status }) => {
           switch (status) {
             case 'sending':
               return <S.Thanks>Enviando...</S.Thanks>
@@ -28,7 +28,9 @@ const Newsletter = () => {
             case 'error':
               return (
                 <S.Thanks
-                  dangerouslySetInnerHTML={{ __html: `❌ ${message}` }}
+                  dangerouslySetInnerHTML={{
+                    __html: `❌ Ops, algum erro aconteceu...`
+                  }}
                 />
               )
             default:
@@ -45,7 +47,7 @@ const Newsletter = () => {
                   <input
                     type="email"
                     ref={emailRef}
-                    placeholder="seuemail@bemaqui.com"
+                    placeholder="quero@evoluir.dev"
                   />
                   <input type="submit" value="Me avise!" />
                 </S.Form>

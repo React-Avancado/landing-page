@@ -5,6 +5,7 @@ export const Text = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.texts};
     font-size: ${theme.font.sizes.xsmall};
+    text-align: center;
   `}
 `
 
