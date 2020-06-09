@@ -7,6 +7,7 @@ export const Card = styled.div`
     background-color: ${theme.colors.white};
     padding: ${theme.spacings.medium};
     margin: 3rem 1.2rem;
+    min-height: 26rem;
   `}
 `
 
@@ -17,8 +18,8 @@ export const User = styled.div`
 
 export const Image = styled.picture`
   img {
-    width: 5.4rem;
-    height: 5.4rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 100%;
   }
 `
@@ -48,6 +49,10 @@ export const Text = styled.blockquote`
       &:checked + p {
         -webkit-line-clamp: unset;
       }
+    }
+
+    input:not(:checked) ~ p:not(.truncated) ~ label {
+      display: none;
     }
 
     label {

@@ -26,7 +26,7 @@ const SectionAboutProject = () => (
           <S.Text>
             <p>
               Iremos criar um e-commerce de jogos completo, incluindo toda a
-              parte de pagamentos e área do client. Os usuário poderão buscar,
+              parte de pagamentos e área do cliente. Os usuário poderão buscar,
               filtrar, adicionar ao carrinho e comprar seus jogos favoritos.
             </p>
 
@@ -38,9 +38,9 @@ const SectionAboutProject = () => (
             </p>
 
             <p>
-              Para criar tudo isso, iremos utilizar ferramentas muito utilizadas
-              no mercado como ReactJS, Next, Apollo e outras coisas mais. Sempre
-              prezando a qualidade do código e obviamente, teremos{' '}
+              Para criar tudo isso, iremos utilizar ferramentas muito famosas no
+              mercado de trabalho, como ReactJS, Next, Apollo e outras coisas
+              mais. Sempre prezando a qualidade do código e obviamente, teremos{' '}
               <strong>testes em tudo!</strong>
             </p>
           </S.Text>

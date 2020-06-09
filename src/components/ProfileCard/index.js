@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { GrGithub } from 'react-icons/gr'
-import { FaBehance, FaTwitter } from 'react-icons/fa'
+import { FaDribbble, FaTwitter } from 'react-icons/fa'
 
 import * as S from './styles'
 
 const icons = {
   twitter: <FaTwitter />,
   github: <GrGithub />,
-  behance: <FaBehance />
+  dribbble: <FaDribbble />
 }
 
 const ProfileCard = ({ name, role, image, socialLinks, description }) => (

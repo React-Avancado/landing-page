@@ -16,7 +16,7 @@ const SectionFaq = () => (
           {faq.map(({ question, answer }, index) => (
             <S.Question key={index}>
               <Heading lineBottom>{question}</Heading>
-              <p>{answer}</p>
+              <div dangerouslySetInnerHTML={{ __html: answer }} />
             </S.Question>
           ))}
         </S.Questions>
