@@ -21,7 +21,7 @@ const SectionHero = () => (
             Crie aplicações reais com NextJS, Strapi, GraphQL e mais!
           </S.Description>
           <S.ButtonWrapper>
-            <Button href="#" onClick={onClick} wide>
+            <Button href="#agenda" onClick={onClick} wide>
               Garantir minha vaga
             </Button>
           </S.ButtonWrapper>
