@@ -7,11 +7,18 @@ const ReviewCard = ({ id, name, image, description }) => {
   useEffect(() => {
     const texts = document.querySelectorAll('p.description')
 
-    texts.forEach((text) => {
-      if (text.textContent.length > 197) {
-        text.classList.add('truncated')
+    // eslint-disable-next-line
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        entry.target.classList[
+          entry.target.scrollHeight > entry.contentRect.height + 25
+            ? 'add'
+            : 'remove'
+        ]('truncated')
       }
     })
+
+    texts.forEach((text) => observer.observe(text))
   })
 
   return (

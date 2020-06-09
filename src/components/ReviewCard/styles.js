@@ -51,7 +51,7 @@ export const Text = styled.blockquote`
       }
     }
 
-    p:not(.truncated) ~ label {
+    input:not(:checked) ~ p:not(.truncated) ~ label {
       display: none;
     }
 
