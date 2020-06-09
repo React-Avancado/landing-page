@@ -1,33 +1,33 @@
 const faq = [
   {
-    question: 'Onde os vídeos serão publicados?',
+    question: 'O que preciso saber para o curso?',
     answer:
-      'Os vídeos serão publicados na Udemy, com o mesmo funcionamento que já existe, direito a vídeos offline, uso em app, etc.'
+      'Um conhecimento básico de JavaScript/React é necessário para maior entendimento do curso, mas todo o conteúdo será explicado em detalhes e todas as perguntas/dúvidas serão respondidas.'
   },
   {
     question: 'Onde os vídeos serão publicados?',
     answer:
-      'Os vídeos serão publicados na Udemy, com o mesmo funcionamento que já existe, direito a vídeos offline, uso em app, etc.'
+      'Os vídeos serão publicados na Udemy, com o mesmo funcionamento que já existe, vídeos offline, autoplay, acelerar em 2x, aplicativo nativo e mais.'
   },
   {
-    question: 'Onde os vídeos serão publicados?',
+    question: 'Quanto tempo tenho para fazer o curso?',
     answer:
-      'Os vídeos serão publicados na Udemy, com o mesmo funcionamento que já existe, direito a vídeos offline, uso em app, etc.'
+      'O curso é vitalício, faça quantas vezes quiser e quando quiser, nada de bloqueios ou pressa.'
   },
   {
-    question: 'Onde os vídeos serão publicados?',
+    question: 'Esse curso tem certificado?',
     answer:
-      'Os vídeos serão publicados na Udemy, com o mesmo funcionamento que já existe, direito a vídeos offline, uso em app, etc.'
+      'Sim, o curso terá certificado e você poderá baixá-lo diretamente da Udemy ao término do curso.'
   },
   {
-    question: 'Onde os vídeos serão publicados?',
+    question: 'Quais outros cursos você tem?',
     answer:
-      'Os vídeos serão publicados na Udemy, com o mesmo funcionamento que já existe, direito a vídeos offline, uso em app, etc.'
+      '<p>Tenho alguns cursos gratuitos e pagos, você pode acessar todos os cursos <a href="https://willianjusten.com.br/cursos">nesse link.</a></p>'
   },
   {
-    question: 'Onde os vídeos serão publicados?',
+    question: 'Posso usar o projeto para o meu Portfólio?',
     answer:
-      'Os vídeos serão publicados na Udemy, com o mesmo funcionamento que já existe, direito a vídeos offline, uso em app, etc.'
+      'Definitivamente! A ideia é que vocês tenham um projeto de verdade que possam utilizar como bem entenderem.'
   }
 ]
 

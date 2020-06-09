@@ -36,7 +36,15 @@ export const Questions = styled.div`
   `}
 `
 
-export const Question = styled.div``
+export const Question = styled.div`
+  ${({ theme }) => css`
+    a {
+      color: ${theme.colors.primary};
+      text-decoration: none;
+      border-bottom: 1px solid ${theme.colors.primary};
+    }
+  `}
+`
 
 export const ExtraQuestion = styled.div`
   ${({ theme }) => css`
