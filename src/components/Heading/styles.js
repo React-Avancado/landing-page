@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 const wrapperModifiers = {
   defaultColor: (theme) => css`
@@ -31,7 +32,11 @@ const wrapperModifiers = {
 export const Wrapper = styled.h2`
   ${({ theme, reverseColor, lineBottom }) => css`
     padding-left: 1rem;
-    font-size: ${theme.font.sizes.large};
+    font-size: ${theme.font.sizes.medium};
+
+    ${media.greaterThan('medium')`
+      font-size: ${theme.font.sizes.large};
+    `}
 
     ${!reverseColor && wrapperModifiers.defaultColor(theme)};
     ${reverseColor && wrapperModifiers.reverseColor(theme)};

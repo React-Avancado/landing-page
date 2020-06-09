@@ -6,7 +6,7 @@ export const Card = styled.div`
     border-radius: ${theme.border.radius};
     background-color: ${theme.colors.white};
     padding: ${theme.spacings.medium};
-    margin: 3rem 1.2rem;
+    margin: ${theme.spacings.medium} 1.2rem;
     min-height: 26rem;
   `}
 `

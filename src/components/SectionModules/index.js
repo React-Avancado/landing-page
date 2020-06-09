@@ -8,19 +8,17 @@ import content from './content'
 import * as S from './styles'
 
 const SectionModules = () => (
-  <S.Wrapper>
-    <Container>
-      <Heading reverseColor>Módulos deste curso</Heading>
+  <Container>
+    <Heading reverseColor>Módulos deste curso</Heading>
 
-      <S.Content>
-        {content.map(({ title, subtitle, description }, index) => (
-          <CardModule key={index} title={title} subTitle={subtitle}>
-            <div dangerouslySetInnerHTML={{ __html: description }} />
-          </CardModule>
-        ))}
-      </S.Content>
-    </Container>
-  </S.Wrapper>
+    <S.Content>
+      {content.map(({ title, subtitle, description }, index) => (
+        <CardModule key={index} title={title} subTitle={subtitle}>
+          <div dangerouslySetInnerHTML={{ __html: description }} />
+        </CardModule>
+      ))}
+    </S.Content>
+  </Container>
 )
 
 SectionModules.defaultProps = {}

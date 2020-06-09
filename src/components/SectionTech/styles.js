@@ -3,12 +3,11 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.section`
   ${({ theme }) => css`
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: ${theme.spacings.large};
 
     ${media.greaterThan('large')`
       flex-direction: row;
-      padding: 12rem ${theme.spacings.medium};
+      padding: ${theme.spacings.xlarge} ${theme.spacings.medium} 0;
     `}
   `}
 `

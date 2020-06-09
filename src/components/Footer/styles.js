@@ -10,15 +10,11 @@ export const Wrapper = styled.footer`
     line-height: ${theme.font.sizes.xlarge};
     position: relative;
     z-index: 2;
-    padding-top: ${theme.spacings.medium};
     margin-top: -${theme.spacings.medium};
-    padding-bottom: ${theme.spacings.xlarge};
 
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.small};
-      padding-top: ${theme.spacings.xxlarge};
       margin-top: -${theme.spacings.xxlarge};
-      padding-bottom: ${theme.spacings.xlarge};
     `}
 
     a {
