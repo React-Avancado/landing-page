@@ -51,6 +51,7 @@ export const Prices = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-bottom: ${theme.spacings.medium};
 
     ${media.greaterThan('720px')`
@@ -64,8 +65,10 @@ export const FullPrice = styled.p`
     color: ${theme.colors.gray};
     font-size: ${theme.font.sizes.large};
     font-weight: 400;
-    text-decoration: line-through;
-    margin-right: ${theme.spacings.medium};
+
+    span {
+      text-decoration: line-through;
+    }
   `}
 `
 
@@ -74,6 +77,11 @@ export const DiscountPrice = styled.p`
     color: ${theme.colors.primary};
     font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.bold};
+
+    span {
+      color: ${theme.colors.texts};
+      font-size: ${theme.font.sizes.medium};
+    }
   `}
 `
 
