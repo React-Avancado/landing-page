@@ -16,9 +16,10 @@ export const Box = styled.section`
 
 export const List = styled.ul`
   ${({ theme }) => css`
-    padding: ${theme.spacings.small} ${theme.spacings.xsmall} 0;
+    padding: ${theme.spacings.small} 0 0;
 
     ${media.greaterThan('medium')`
+      padding: ${theme.spacings.small} ${theme.spacings.xsmall} 0;
       column-count: 2;
     `}
 

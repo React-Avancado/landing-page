@@ -31,25 +31,23 @@ const settings = {
 }
 
 const SectionReviews = () => (
-  <S.Wrapper>
-    <Container>
-      <Heading reverseColor>Junte-se a mais de 200 mil alunos</Heading>
+  <Container>
+    <Heading reverseColor>Junte-se a mais de 200 mil alunos</Heading>
 
-      <S.Content>
-        <Slider {...settings}>
-          {reviews.map(({ name, image, description }, index) => (
-            <ReviewCard
-              key={index}
-              name={name}
-              image={image}
-              description={description}
-              id={index}
-            />
-          ))}
-        </Slider>
-      </S.Content>
-    </Container>
-  </S.Wrapper>
+    <S.Content>
+      <Slider {...settings}>
+        {reviews.map(({ name, image, description }, index) => (
+          <ReviewCard
+            key={index}
+            name={name}
+            image={image}
+            description={description}
+            id={index}
+          />
+        ))}
+      </Slider>
+    </S.Content>
+  </Container>
 )
 
 export default SectionReviews

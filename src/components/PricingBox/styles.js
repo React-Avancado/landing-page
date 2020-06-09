@@ -8,12 +8,13 @@ export const Box = styled.section`
     flex-direction: column;
     border-radius: 0;
     background: ${theme.colors.white};
-    padding: ${theme.spacings.medium};
-    margin: ${theme.spacings.large} auto ${theme.spacings.xlarge};
+    padding: ${theme.spacings.medium} calc(${theme.spacings.medium} / 2);
+    margin: 0 auto ${theme.spacings.large};
 
     ${media.greaterThan('720px')`
       max-width: 72rem;
       padding: ${theme.spacings.large} ${theme.spacings.xxlarge};
+      margin: 0 auto ${theme.spacings.large};
       border-radius: ${theme.border.radius};
     `}
   `}

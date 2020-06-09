@@ -5,13 +5,10 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.white};
     color: ${theme.colors.texts};
-    padding: ${theme.spacings.medium} 0 ${theme.spacings.xlarge};
     transform: skewY(4deg);
-    margin-top: ${theme.spacings.xlarge};
 
     ${media.greaterThan('medium')`
-      margin-top: ${theme.spacings.xlarge};
-      padding: ${theme.spacings.xlarge} 0 ${theme.spacings.xxlarge};
+      padding-bottom: ${theme.spacings.xxlarge};
     `}
   `}
 `
