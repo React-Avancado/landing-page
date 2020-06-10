@@ -29,7 +29,8 @@ const content = [
       'Front-End e UI Designer há alguns anos. Atualmente trabalha na Lukin Co. Já participou de diversos tipos de projetos, na área da saúde, streaming e varejo. Sempre dividido entre design e programação. No tempo livre sempre está envolvido com a comunidade, organizando eventos e meetups.',
     socialLinks: [
       { slug: 'twitter', link: 'https://twitter.com/vmaarcosp' },
-      { slug: 'dribbble', link: 'http://vmarcosp.dribbble.com/' }
+      { slug: 'dribbble', link: 'http://vmarcosp.dribbble.com/' },
+      { slug: 'github', link: 'https://github.com/vmarcosp' }
     ]
   }
 ]
