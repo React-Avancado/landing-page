@@ -11,9 +11,9 @@ const content = [
   'Criar componentes do zero',
   'Utilizar componentes third-party',
   'Utilizar Storybook',
-  'Criar APIs super rápido',
+  'Criar APIs rapidamente',
   'Envio de emails automatizado',
-  'Autenticação de usuário',
+  'Autenticação de usuários',
   'Fluxo de pagamentos',
   'Criação de pipelines em CI',
   'Deploy automatizado'

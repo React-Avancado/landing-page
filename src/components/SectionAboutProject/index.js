@@ -25,8 +25,8 @@ const SectionAboutProject = () => (
           <Heading>O que iremos construir</Heading>
           <S.Text>
             <p>
-              Iremos criar um e-commerce de jogos completo, incluindo toda a
-              parte de pagamentos e área do cliente. Os usuário poderão buscar,
+              Iremos criar um e-commerce de jogos, incluindo toda a parte de
+              pagamentos e área do cliente. Os clientes poderão fazer buscas,
               filtrar, adicionar ao carrinho e comprar seus jogos favoritos.
             </p>
 
@@ -34,13 +34,13 @@ const SectionAboutProject = () => (
               Teremos também um <strong>CMS completamente customizado</strong>{' '}
               para que os administradores possam adicionar produtos, categorias,
               plataformas, criar promoções, editar partes do site, além de
-              emails automatizados para as vendas de cada produto.
+              emails automatizados para às vendas de cada produto.
             </p>
 
             <p>
               Para criar tudo isso, iremos utilizar ferramentas muito famosas no
               mercado de trabalho, como ReactJS, Next, Apollo e outras coisas
-              mais. Sempre prezando a qualidade do código e obviamente, teremos{' '}
+              mais. Sempre prezando pela qualidade do código, ou seja, teremos{' '}
               <strong>testes em tudo!</strong>
             </p>
           </S.Text>
