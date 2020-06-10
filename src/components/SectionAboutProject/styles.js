@@ -6,6 +6,10 @@ export const Wrapper = styled.section`
     display: flex;
     background: ${theme.colors.white};
     transform: skewY(3deg);
+
+    ${media.greaterThan('medium')`
+      padding: ${theme.spacings.large} 0;
+    `}
   `}
 `
 

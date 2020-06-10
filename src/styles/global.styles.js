@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     html {
       font-family: ${theme.font.family};
       font-size: 62.5%;
+      scroll-behavior: smooth;
     }
 
     body {
