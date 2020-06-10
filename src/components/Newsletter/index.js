@@ -50,6 +50,7 @@ const Newsletter = () => {
                       id="email"
                       type="email"
                       ref={emailRef}
+                      required
                       placeholder="quero@evoluir.dev"
                     />
                   </div>
