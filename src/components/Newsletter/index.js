@@ -23,8 +23,8 @@ const Newsletter = () => {
             case 'success':
               return (
                 <S.Thanks>
-                  ✔️ Prontinho! Agora é só confirmar sua inscrição no email que
-                  você vai receber em instantes.
+                  ✔️ Quer concorrer a esse curso de graça? Compartilhe com seus
+                  amigos!
                   <ShareButtons />
                 </S.Thanks>
               )
