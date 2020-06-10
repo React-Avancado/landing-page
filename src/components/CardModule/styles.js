@@ -4,7 +4,7 @@ export const Card = styled.article`
   ${({ theme }) => css`
     background-color: ${theme.colors.white};
     padding: ${theme.spacings.medium};
-    color: ${theme.colors.black};
+    color: ${theme.colors.texts};
     font-size: ${theme.font.sizes.xsmall};
     border-radius: ${theme.border.radius};
   `}

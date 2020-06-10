@@ -63,6 +63,6 @@ export const Link = styled.li`
 export const Description = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xxsmall};
-    color: ${theme.colors.black};
+    color: ${theme.colors.texts};
   `}
 `

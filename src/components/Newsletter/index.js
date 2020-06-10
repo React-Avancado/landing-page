@@ -1,6 +1,8 @@
 import React, { createRef } from 'react'
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 
+import ShareButtons from 'components/ShareButtons'
+
 import * as S from './styles'
 
 const url =
@@ -23,6 +25,7 @@ const Newsletter = () => {
                 <S.Thanks>
                   ✔️ Prontinho! Agora é só confirmar sua inscrição no email que
                   você vai receber em instantes.
+                  <ShareButtons />
                 </S.Thanks>
               )
             case 'error':
