@@ -1,5 +1,11 @@
 export const theme = {
-  container: '125rem',
+  grid: {
+    container: '130rem',
+    gutter: '3.2rem'
+  },
+  border: {
+    radius: '0.4rem'
+  },
   font: {
     family:
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
@@ -16,20 +22,21 @@ export const theme = {
   },
   colors: {
     primary: '#F231A5',
+    primaryHover: '#E20E8D',
     secondary: '#3CD3C1',
-    mainBg: '#06092B',
+    mainBg: '#030518',
     boxBg: '#FAFAFA',
     texts: '#030517',
-    muted: '#B5B5B5',
     white: '#FFFFFF',
-    black: '#000000'
+    black: '#000000',
+    gray: '#7B7373'
   },
   spacings: {
     xxsmall: '0.8rem',
     xsmall: '1.6rem',
     small: '2.4rem',
     medium: '3.2rem',
-    large: '5.6rem',
+    large: '6.0rem',
     xlarge: '6.4rem',
     xxlarge: '12.8rem'
   }
