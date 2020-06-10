@@ -61,6 +61,8 @@ const JsonSchema = () => (
           }
         }
       ]}
+      mpn="reactavancado"
+      sku="reactavancado"
     />
   </>
 )
