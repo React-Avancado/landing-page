@@ -18,14 +18,14 @@ export const TitleWrapper = styled.div`
   `}
 `
 
-export const Title = styled.h2`
+export const Title = styled.h3`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
     font-weight: bold;
   `}
 `
 
-export const SubTitle = styled.h3`
+export const SubTitle = styled.h4`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xxsmall};
     font-weight: normal;
