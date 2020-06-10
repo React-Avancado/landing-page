@@ -24,15 +24,16 @@ export const Form = styled.form`
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.xsmall};
       border-radius: ${theme.border.radius};
-      padding: 1.2rem;
+      padding: 1.4rem;
       background: #ececec;
+      width: 100%;
 
       &:focus {
         outline-color: ${theme.colors.primary};
       }
     }
 
-    input[type='submit'] {
+    button[type='submit'] {
       font-family: ${theme.font.family};
       cursor: pointer;
       background: ${theme.colors.primary};
@@ -51,6 +52,15 @@ export const Form = styled.form`
       }
     }
   `}
+`
+
+export const Label = styled.label`
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
 `
 
 export const Thanks = styled.p`

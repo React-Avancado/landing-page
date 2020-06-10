@@ -44,12 +44,16 @@ const Newsletter = () => {
                     })
                   }}
                 >
-                  <input
-                    type="email"
-                    ref={emailRef}
-                    placeholder="quero@evoluir.dev"
-                  />
-                  <input type="submit" value="Me avise!" />
+                  <div>
+                    <S.Label htmlFor="email">E-mail:</S.Label>
+                    <input
+                      id="email"
+                      type="email"
+                      ref={emailRef}
+                      placeholder="quero@evoluir.dev"
+                    />
+                  </div>
+                  <button type="submit">Me avise!</button>
                 </S.Form>
               )
           }
