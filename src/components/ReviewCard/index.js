@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
+import ResizeObserver from 'resize-observer-polyfill'
 
 import * as S from './styles'
 

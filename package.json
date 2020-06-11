@@ -46,6 +46,7 @@
     "react-icons": "^3.10.0",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-slick": "^0.26.1",
+    "resize-observer-polyfill": "^1.5.1",
     "styled-components": "^5.1.1",
     "styled-media-query": "^2.1.2",
     "webp-loader": "^0.6.0"
