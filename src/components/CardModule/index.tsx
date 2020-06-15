@@ -2,17 +2,13 @@ import React from 'react'
 
 import * as S from './styles'
 
-type CardModuleProps = {
+type Props = {
   title: string
   subTitle: string
   children: React.ReactNode
 }
 
-const CardModule: React.FC<CardModuleProps> = ({
-  title,
-  subTitle,
-  children
-}) => (
+const CardModule: React.FC<Props> = ({ title, subTitle, children }) => (
   <S.Card>
     <S.TitleWrapper>
       <S.Title>{title}</S.Title>

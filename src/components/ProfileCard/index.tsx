@@ -16,7 +16,7 @@ type socialLinks = {
   link: string
 }
 
-type ProfileCardProps = {
+type Props = {
   name: string
   role: string
   image: string
@@ -24,7 +24,7 @@ type ProfileCardProps = {
   description: string
 }
 
-const ProfileCard: React.FC<ProfileCardProps> = ({
+const ProfileCard: React.FC<Props> = ({
   name,
   role,
   image,

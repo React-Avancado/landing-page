@@ -3,19 +3,14 @@ import ResizeObserver from 'resize-observer-polyfill'
 
 import * as S from './styles'
 
-type ReviewCardProps = {
+type Props = {
   id: number
   name: string
   image: string
   description: string
 }
 
-const ReviewCard: React.FC<ReviewCardProps> = ({
-  id,
-  name,
-  image,
-  description
-}) => {
+const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
   useEffect(() => {
     const texts = document.querySelectorAll('p.description')
 

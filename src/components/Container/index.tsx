@@ -2,12 +2,12 @@ import React from 'react'
 
 import * as S from './styles'
 
-type ContainerProps = {
+type Props = {
   id?: string
   children: React.ReactNode
 }
 
-const Container: React.FC<ContainerProps> = ({ children, id }) => (
+const Container: React.FC<Props> = ({ children, id }) => (
   <S.Container id={id}>{children}</S.Container>
 )
 

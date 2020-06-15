@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as S from './styles'
 
-type ButtonProps = {
+type Props = {
   children: React.ReactNode
   wide?: boolean
   href: string
@@ -10,7 +10,7 @@ type ButtonProps = {
   onClick: () => void
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<Props> = ({
   children,
   wide,
   withPrice,

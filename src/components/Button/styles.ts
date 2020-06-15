@@ -1,7 +1,7 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
 
-type ButtonProps = {
+type Props = {
   wide: boolean
   withPrice: boolean
 }
@@ -22,7 +22,7 @@ const buttonModifiers = {
   `
 }
 
-export const ButtonWrapper = styled.a<ButtonProps>`
+export const ButtonWrapper = styled.a<Props>`
   ${({ theme, wide, withPrice }) => css`
     background: ${theme.colors.primary};
     border-radius: ${theme.border.radius};

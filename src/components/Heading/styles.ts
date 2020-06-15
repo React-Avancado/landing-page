@@ -1,6 +1,7 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
-import { HeadingProps } from '.'
+
+import { Props } from '.'
 
 const wrapperModifiers = {
   defaultColor: (theme: DefaultTheme) => css`
@@ -30,7 +31,7 @@ const wrapperModifiers = {
   `
 }
 
-export const Wrapper = styled.h2<HeadingProps>`
+export const Wrapper = styled.h2<Props>`
   ${({ theme, reverseColor, lineBottom }) => css`
     padding-left: 1rem;
     font-size: ${theme.font.sizes.medium};
