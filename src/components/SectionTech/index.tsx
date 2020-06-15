@@ -1,9 +1,10 @@
 import React from 'react'
+
 import Heading from 'components/Heading'
+import Container from 'components/Container'
 
 import icons from './content'
 import * as S from './styles'
-import Container from 'components/Container'
 
 const SectionTech = () => (
   <S.Wrapper>

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import { GrGithub } from 'react-icons/gr'
 import { FaDribbble, FaTwitter } from 'react-icons/fa'
@@ -12,7 +11,26 @@ const icons = {
   dribbble: <FaDribbble />
 }
 
-const ProfileCard = ({ name, role, image, socialLinks, description }) => (
+type socialLinks = {
+  slug: string
+  link: string
+}
+
+type ProfileCardProps = {
+  name: string
+  role: string
+  image: string
+  socialLinks: socialLinks[]
+  description: string
+}
+
+const ProfileCard: React.FC<ProfileCardProps> = ({
+  name,
+  role,
+  image,
+  socialLinks,
+  description
+}) => (
   <S.Card key={name}>
     <S.Image>
       <source
@@ -40,18 +58,5 @@ const ProfileCard = ({ name, role, image, socialLinks, description }) => (
     <S.Description>{description}</S.Description>
   </S.Card>
 )
-
-ProfileCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  socialLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      slug: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired
-    })
-  ).isRequired,
-  description: PropTypes.string.isRequired
-}
 
 export default ProfileCard

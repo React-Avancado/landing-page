@@ -1,14 +1,24 @@
 import React, { useEffect } from 'react'
-import PropTypes from 'prop-types'
 import ResizeObserver from 'resize-observer-polyfill'
 
 import * as S from './styles'
 
-const ReviewCard = ({ id, name, image, description }) => {
+type ReviewCardProps = {
+  id: number
+  name: string
+  image: string
+  description: string
+}
+
+const ReviewCard: React.FC<ReviewCardProps> = ({
+  id,
+  name,
+  image,
+  description
+}) => {
   useEffect(() => {
     const texts = document.querySelectorAll('p.description')
 
-    // eslint-disable-next-line
     const observer = new ResizeObserver((entries) => {
       for (const entry of entries) {
         entry.target.classList[
@@ -51,13 +61,6 @@ const ReviewCard = ({ id, name, image, description }) => {
       </S.Text>
     </S.Card>
   )
-}
-
-ReviewCard.propTypes = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
 }
 
 export default ReviewCard

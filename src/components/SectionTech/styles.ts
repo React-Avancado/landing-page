@@ -21,7 +21,7 @@ export const IconsContainer = styled.div`
     row-gap: ${theme.spacings.medium};
     margin-top: ${theme.spacings.large};
 
-    ${media.greaterThan('500px')`
+    ${media.greaterThan('small')`
       grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
     `}
 
@@ -46,12 +46,11 @@ export const Icons = styled.img`
 `
 
 export const IconsName = styled.p`
-  ${({ theme, mobile }) => css`
+  ${({ theme }) => css`
     font-size: ${theme.font.sizes.xsmall};
     margin-top: ${theme.spacings.xxsmall};
 
     ${media.greaterThan('medium')`
-      display: ${mobile ? 'none' : 'block'};
       font-size: ${theme.font.sizes.small};
       font-weight: ${theme.font.bold};
     `}

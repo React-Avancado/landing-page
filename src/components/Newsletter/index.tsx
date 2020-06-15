@@ -9,7 +9,7 @@ const url =
   'https://willianjusten.us14.list-manage.com/subscribe/post?u=4697443522f6e465b6cf0d979&amp;id=02f1ff1c87'
 
 const Newsletter = () => {
-  const emailRef = createRef(undefined)
+  const emailRef = createRef<HTMLInputElement>()
 
   return (
     <div>

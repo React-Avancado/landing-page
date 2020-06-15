@@ -1,9 +1,18 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import * as S from './styles'
 
-const CardModule = ({ title, subTitle, children }) => (
+type CardModuleProps = {
+  title: string
+  subTitle: string
+  children: React.ReactNode
+}
+
+const CardModule: React.FC<CardModuleProps> = ({
+  title,
+  subTitle,
+  children
+}) => (
   <S.Card>
     <S.TitleWrapper>
       <S.Title>{title}</S.Title>
@@ -13,11 +22,5 @@ const CardModule = ({ title, subTitle, children }) => (
     <S.Content>{children}</S.Content>
   </S.Card>
 )
-
-CardModule.propTypes = {
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
-}
 
 export default CardModule
