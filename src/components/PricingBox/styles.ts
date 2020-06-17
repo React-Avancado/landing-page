@@ -11,7 +11,7 @@ export const Box = styled.section`
     padding: ${theme.spacings.medium} calc(${theme.spacings.medium} / 2);
     margin: 0 auto ${theme.spacings.large};
 
-    ${media.greaterThan('720px')`
+    ${media.greaterThan('medium')`
       max-width: 72rem;
       padding: ${theme.spacings.large} ${theme.spacings.xxlarge};
       margin: 0 auto ${theme.spacings.large};
@@ -40,7 +40,7 @@ export const Ribbon = styled.span`
       clip-path: polygon(100% 0, 0 0, 0 100%);
     }
 
-    ${media.lessThan('720px')`
+    ${media.lessThan('medium')`
       display: none;
     `}
   `}
@@ -54,7 +54,7 @@ export const Prices = styled.div`
     flex-direction: column;
     margin-bottom: ${theme.spacings.medium};
 
-    ${media.greaterThan('720px')`
+    ${media.greaterThan('medium')`
       margin-bottom: ${theme.spacings.large};
     `}
   `}

@@ -1,14 +1,19 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
 
+type Props = {
+  wide: boolean
+  withPrice: boolean
+}
+
 const buttonModifiers = {
-  withPrice: (theme) => css`
+  withPrice: (theme: DefaultTheme) => css`
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: ${theme.spacings.xsmall};
   `,
-  wide: (theme) => css`
+  wide: (theme: DefaultTheme) => css`
     padding: 1.3rem ${theme.spacings.medium};
 
     ${media.greaterThan('medium')`
@@ -17,7 +22,7 @@ const buttonModifiers = {
   `
 }
 
-export const ButtonWrapper = styled.a`
+export const ButtonWrapper = styled.a<Props>`
   ${({ theme, wide, withPrice }) => css`
     background: ${theme.colors.primary};
     border-radius: ${theme.border.radius};

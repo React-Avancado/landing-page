@@ -1,20 +1,22 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
 
+import { Props } from '.'
+
 const wrapperModifiers = {
-  defaultColor: (theme) => css`
+  defaultColor: (theme: DefaultTheme) => css`
     color: ${theme.colors.black};
   `,
 
-  reverseColor: (theme) => css`
+  reverseColor: (theme: DefaultTheme) => css`
     color: ${theme.colors.white};
   `,
 
-  lineLeft: (theme) => css`
+  lineLeft: (theme: DefaultTheme) => css`
     border-left: 7px solid ${theme.colors.secondary};
   `,
 
-  lineBottom: (theme) => css`
+  lineBottom: (theme: DefaultTheme) => css`
     padding-left: 0;
     position: relative;
     margin-bottom: ${theme.spacings.medium};
@@ -29,7 +31,7 @@ const wrapperModifiers = {
   `
 }
 
-export const Wrapper = styled.h2`
+export const Wrapper = styled.h2<Props>`
   ${({ theme, reverseColor, lineBottom }) => css`
     padding-left: 1rem;
     font-size: ${theme.font.sizes.medium};

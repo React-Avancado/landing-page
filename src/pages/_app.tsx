@@ -1,13 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
+import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
-import { theme } from 'styles/theme'
+import theme from 'styles/theme'
 import GlobalStyle from 'styles/global.styles'
 
-const App = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
@@ -40,11 +40,6 @@ const App = ({ Component, pageProps }) => {
       <Component {...pageProps} />
     </ThemeProvider>
   )
-}
-
-App.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object
 }
 
 export default App

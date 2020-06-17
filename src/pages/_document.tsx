@@ -1,10 +1,16 @@
 import React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext
+} from 'next/document'
 import Analytics from 'components/Analytics'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class NextDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 

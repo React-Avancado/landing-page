@@ -21,8 +21,4 @@ const SectionModules = () => (
   </Container>
 )
 
-SectionModules.defaultProps = {}
-
-SectionModules.propTypes = {}
-
 export default SectionModules

@@ -23,7 +23,7 @@ export const List = styled.ul`
       column-count: 2;
     `}
 
-    ${media.greaterThan('70rem')`
+    ${media.greaterThan('large')`
       column-count: 3;
     `}
   `}

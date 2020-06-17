@@ -4,10 +4,11 @@ import Logo from 'components/Logo'
 import Button from 'components/Button'
 import * as S from './styles'
 
-import { event } from 'utils/ga'
+import { gaEvent } from 'utils/ga'
 import Container from 'components/Container'
 
-const onClick = () => event('click', 'cta', 'hero button')
+const onClick = () =>
+  gaEvent({ action: 'click', category: 'cta', label: 'hero button' })
 
 const SectionHero = () => (
   <S.Wrapper>
