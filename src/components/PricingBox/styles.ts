@@ -20,32 +20,6 @@ export const Box = styled.section`
   `}
 `
 
-export const Ribbon = styled.span`
-  ${({ theme }) => css`
-    background: ${theme.colors.secondary};
-    color: ${theme.colors.white};
-    padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
-    position: absolute;
-    top: ${theme.spacings.small};
-    right: -1.5rem;
-
-    &::after {
-      content: '';
-      position: absolute;
-      background: #2e8379;
-      top: 42.5px;
-      right: 0;
-      width: 1.5rem;
-      height: 1rem;
-      clip-path: polygon(100% 0, 0 0, 0 100%);
-    }
-
-    ${media.lessThan('medium')`
-      display: none;
-    `}
-  `}
-`
-
 export const Prices = styled.div`
   ${({ theme }) => css`
     display: flex;

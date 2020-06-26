@@ -6,15 +6,15 @@ import * as S from './styles'
 
 // Descomentar após o lançamento e remover a Newsletter!
 // import Button from 'components/Button'
-// import { event } from 'utils/ga'
-// const onClick = () => event('click', 'cta', 'pricing box button')
+// import { gaEvent } from 'utils/ga'
+// const onClick = () =>
+//   gaEvent({ action: 'click', category: 'buy', label: 'pricing box button' })
 
 const PricingBox = () => (
   <S.Box>
-    <S.Ribbon>50% desconto</S.Ribbon>
     <S.Prices>
       <S.FullPrice>
-        De <span>R$579</span> por apenas
+        De <span>R$415</span> por apenas
       </S.FullPrice>
       <S.DiscountPrice>
         <span>6x de</span> R$48
@@ -42,7 +42,7 @@ const PricingBox = () => (
     {/* <Button href="#" onClick={onClick} withPrice>
       <p>Comprar o curso</p>
       <div>
-        <S.ButtonFullPrice>R$579</S.ButtonFullPrice>
+        <S.ButtonFullPrice>R$415</S.ButtonFullPrice>
         <S.ButtonDiscountPrice>R$279</S.ButtonDiscountPrice>
       </div>
     </Button> */}
