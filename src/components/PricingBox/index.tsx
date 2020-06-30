@@ -1,12 +1,14 @@
 import React from 'react'
 
-import Button from 'components/Button'
-import { gaEvent } from 'utils/ga'
+import Newsletter from 'components/Newsletter'
 
 import * as S from './styles'
 
-const onClick = () =>
-  gaEvent({ action: 'click', category: 'buy', label: 'pricing box button' })
+// Descomentar após o lançamento e remover a Newsletter!
+// import Button from 'components/Button'
+// import { gaEvent } from 'utils/ga'
+// const onClick = () =>
+//   gaEvent({ action: 'click', category: 'buy', label: 'pricing box button' })
 
 const PricingBox = () => (
   <S.Box>
@@ -36,17 +38,16 @@ const PricingBox = () => (
       </S.BenefitsItem>
     </S.BenefitsList>
 
-    <Button
-      href="https://www.udemy.com/course/react-avancado/?couponCode=MODULO1"
-      onClick={onClick}
-      withPrice
-    >
+    {/* Descomentar após o lançamento! Não esqueça de editar a url! */}
+    {/* <Button href="#" onClick={onClick} withPrice>
       <p>Comprar o curso</p>
       <div>
         <S.ButtonFullPrice>R$415</S.ButtonFullPrice>
-        <S.ButtonDiscountPrice>R$289</S.ButtonDiscountPrice>
+        <S.ButtonDiscountPrice>R$279</S.ButtonDiscountPrice>
       </div>
-    </Button>
+    </Button> */}
+
+    <Newsletter />
   </S.Box>
 )
 
