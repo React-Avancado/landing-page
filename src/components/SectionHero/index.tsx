@@ -23,7 +23,7 @@ const SectionHero = () => (
           </S.Description>
           <S.ButtonWrapper>
             <Button href="#agenda" onClick={onClick} wide>
-              Garantir minha vaga
+              Comprar
             </Button>
           </S.ButtonWrapper>
         </S.TextBlock>
