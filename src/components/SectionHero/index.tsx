@@ -22,7 +22,11 @@ const SectionHero = () => (
             Crie aplicações reais com NextJS, Strapi, GraphQL e mais!
           </S.Description>
           <S.ButtonWrapper>
-            <Button href="#agenda" onClick={onClick} wide>
+            <Button
+              href="https://www.udemy.com/course/react-avancado/?couponCode=MODULO1"
+              onClick={onClick}
+              wide
+            >
               Comprar
             </Button>
           </S.ButtonWrapper>
