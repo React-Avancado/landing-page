@@ -1,6 +1,8 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
 
+import { LandingPage } from 'types/api'
+
 import { request } from 'graphql-request'
 import { getLandingPage } from 'queries/getLandingPage'
 
@@ -17,10 +19,10 @@ import SectionFaq from 'components/SectionFaq'
 import Footer from 'components/Footer'
 import JsonSchema from 'components/JsonSchema'
 
-const Index = ({ landingPage: { logo } }) => {
+const Index = ({ landingPage: { logo, header } }: LandingPage) => {
   return (
     <>
-      <SectionHero logo={logo} />
+      <SectionHero logo={logo} header={header} />
       <SectionAboutProject />
       <SectionTech />
       <SectionConcepts />
