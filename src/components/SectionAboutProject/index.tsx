@@ -3,13 +3,13 @@ import React from 'react'
 import Heading from 'components/Heading'
 import Container from 'components/Container'
 
-import { sectionAboutProjectProps } from 'types/api'
+import { SectionAboutProjectProps } from 'types/api'
 import * as S from './styles'
 import { getImageUrl } from 'utils/getImageUrl'
 
 const SectionAboutProject = ({
   sectionAboutProject
-}: sectionAboutProjectProps) => (
+}: SectionAboutProjectProps) => (
   <S.Wrapper>
     <Container>
       <S.Container>
