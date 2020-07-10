@@ -20,12 +20,12 @@ import Footer from 'components/Footer'
 import JsonSchema from 'components/JsonSchema'
 
 const Index = ({
-  landingPage: { logo, header, sectionAbout }
+  landingPage: { logo, header, sectionAboutProject }
 }: LandingPage) => {
   return (
     <>
       <SectionHero logo={logo} header={header} />
-      <SectionAboutProject sectionAbout={sectionAbout} />
+      <SectionAboutProject sectionAboutProject={sectionAboutProject} />
       <SectionTech />
       <SectionConcepts />
       <SectionModules />
