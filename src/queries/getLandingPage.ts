@@ -21,8 +21,8 @@ export const getLandingPage = /* GraphQL */ `
     }
   }
 
-  fragment sectionAbout on LandingPage {
-    sectionAbout {
+  fragment sectionAboutProject on LandingPage {
+    sectionAboutProject {
       title
       description
       image {
@@ -80,8 +80,8 @@ export const getLandingPage = /* GraphQL */ `
     }
   }
 
-  fragment sectionAuthors on LandingPage {
-    sectionAuthors {
+  fragment sectionAboutUs on LandingPage {
+    sectionAboutUs {
       title
       authors {
         photo {
@@ -125,12 +125,12 @@ export const getLandingPage = /* GraphQL */ `
     landingPage {
       ...logo
       ...header
-      ...sectionAbout
+      ...sectionAboutProject
       ...sectionTech
       ...sectionConcepts
       ...sectionModules
       ...sectionAgenda
-      ...sectionAuthors
+      ...sectionAboutUs
       ...sectionReviews
       ...sectionFaq
     }
