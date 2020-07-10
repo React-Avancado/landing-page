@@ -20,6 +20,17 @@ export type HeaderProps = {
   }
 }
 
+export type sectionAboutProps = {
+  sectionAbout: {
+    title: string
+    description: string
+    image: {
+      alternativeText: string
+      url: string
+    }
+  }
+}
+
 export type LandingPage = {
-  landingPage: LogoProps & HeaderProps
+  landingPage: LogoProps & HeaderProps & sectionAboutProps
 }
