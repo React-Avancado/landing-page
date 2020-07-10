@@ -36,7 +36,7 @@ export const getLandingPage = /* GraphQL */ `
     sectionTech {
       title
 
-      techIcon {
+      techIcons {
         title
         icon {
           url
@@ -48,7 +48,7 @@ export const getLandingPage = /* GraphQL */ `
   fragment sectionConcepts on LandingPage {
     sectionConcepts {
       title
-      concept {
+      concepts {
         title
       }
     }
@@ -57,7 +57,7 @@ export const getLandingPage = /* GraphQL */ `
   fragment sectionModules on LandingPage {
     sectionModules {
       title
-      module {
+      modules {
         title
         subtitle
         description
@@ -101,7 +101,7 @@ export const getLandingPage = /* GraphQL */ `
   fragment sectionReviews on LandingPage {
     sectionReviews {
       title
-      review {
+      reviews {
         name
         text
         photo {
@@ -114,7 +114,7 @@ export const getLandingPage = /* GraphQL */ `
   fragment sectionFaq on LandingPage {
     sectionFaq {
       title
-      question {
+      questions {
         question
         answer
       }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
 
-import { LandingPage } from 'types/api'
+import { LandingPageProps } from 'types/api'
 
 import { request } from 'graphql-request'
 import { getLandingPage } from 'queries/getLandingPage'
@@ -27,7 +27,7 @@ const Index = ({
     sectionTech,
     sectionConcepts
   }
-}: LandingPage) => {
+}: LandingPageProps) => {
   return (
     <>
       <SectionHero logo={logo} header={header} />
