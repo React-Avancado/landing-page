@@ -22,7 +22,9 @@ const SectionAboutProject = ({
         />
         <div>
           <Heading>{title}</Heading>
-          <S.Text>{description}</S.Text>
+          <S.Text>
+            <p>{description}</p>
+          </S.Text>
         </div>
       </S.Container>
     </Container>
