@@ -39,7 +39,10 @@ const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
       </S.User>
       <S.Text>
         <input type="checkbox" id={`review-${id}`} />
-        <p className="description">{description}</p>
+        <p
+          className="description"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
         <label className="label-more" htmlFor={`review-${id}`}>
           Ver tudo
         </label>

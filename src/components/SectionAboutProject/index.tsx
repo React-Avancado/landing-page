@@ -22,9 +22,7 @@ const SectionAboutProject = ({
         />
         <div>
           <Heading>{title}</Heading>
-          <S.Text>
-            <p>{description}</p>
-          </S.Text>
+          <S.Text dangerouslySetInnerHTML={{ __html: description }} />
         </div>
       </S.Container>
     </Container>

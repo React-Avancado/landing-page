@@ -48,7 +48,7 @@ const ProfileCard = ({
         </S.Link>
       ))}
     </S.SocialLinks>
-    <S.Description>{description}</S.Description>
+    <S.Description dangerouslySetInnerHTML={{ __html: description }} />
   </S.Card>
 )
 
