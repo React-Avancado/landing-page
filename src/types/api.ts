@@ -55,7 +55,7 @@ type SocialNetwork = {
   url: string
 }
 
-export type Author = {
+type Author = {
   name: string
   title: string
   photo: Photo
@@ -63,10 +63,15 @@ export type Author = {
   description: string
 }
 
-export type Review = {
+type Review = {
   name: string
   text: string
   photo: Photo
+}
+
+type Question = {
+  question: string
+  answer: string
 }
 
 export type SectionTechProps = {
@@ -100,6 +105,11 @@ export type SectionReviewsProps = {
   reviews: Review[]
 }
 
+export type SectionFaqProps = {
+  title: string
+  questions: Question[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -110,4 +120,5 @@ export type LandingPageProps = {
   sectionAgenda: SectionAgendaProps
   sectionAboutUs: SectionAboutUsProps
   sectionReviews: SectionReviewsProps
+  sectionFaq: SectionFaqProps
 }
