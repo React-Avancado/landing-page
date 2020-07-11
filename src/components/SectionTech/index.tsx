@@ -8,12 +8,12 @@ import Container from 'components/Container'
 
 import * as S from './styles'
 
-const SectionTech = ({ sectionTech }: SectionTechProps) => (
+const SectionTech = ({ techIcons }: SectionTechProps) => (
   <S.Wrapper>
     <Container>
       <Heading reverseColor>Tecnologias utilizadas</Heading>
       <S.IconsContainer>
-        {sectionTech.techIcons.map(({ title, icon }) => (
+        {techIcons.map(({ title, icon }) => (
           <S.Icon key={title}>
             <S.Icons src={getImageUrl(icon.url)} alt={title} loading="lazy" />
             <S.IconsName>{title}</S.IconsName>

@@ -20,21 +20,20 @@ import Footer from 'components/Footer'
 import JsonSchema from 'components/JsonSchema'
 
 const Index = ({
-  landingPage: {
-    logo,
-    header,
-    sectionAboutProject,
-    sectionTech,
-    sectionConcepts
-  }
+  logo,
+  header,
+  sectionAboutProject,
+  sectionTech,
+  sectionConcepts,
+  sectionModules
 }: LandingPageProps) => {
   return (
     <>
       <SectionHero logo={logo} header={header} />
-      <SectionAboutProject sectionAboutProject={sectionAboutProject} />
-      <SectionTech sectionTech={sectionTech} />
-      <SectionConcepts sectionConcepts={sectionConcepts} />
-      <SectionModules />
+      <SectionAboutProject {...sectionAboutProject} />
+      <SectionTech {...sectionTech} />
+      <SectionConcepts {...sectionConcepts} />
+      <SectionModules {...sectionModules} />
       <SectionAgenda />
       <PricingBox />
       <SectionAboutUs />
@@ -54,7 +53,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      landingPage
+      ...landingPage
     }
   }
 }

@@ -8,19 +8,21 @@ import * as S from './styles'
 import { getImageUrl } from 'utils/getImageUrl'
 
 const SectionAboutProject = ({
-  sectionAboutProject
+  image,
+  title,
+  description
 }: SectionAboutProjectProps) => (
   <S.Wrapper>
     <Container>
       <S.Container>
         <S.Image
-          src={getImageUrl(sectionAboutProject.image.url)}
+          src={getImageUrl(image.url)}
           loading="lazy"
-          alt={sectionAboutProject.image.alternativeText}
+          alt={image.alternativeText}
         />
         <div>
-          <Heading>{sectionAboutProject.title}</Heading>
-          <S.Text>{sectionAboutProject.description}</S.Text>
+          <Heading>{title}</Heading>
+          <S.Text>{description}</S.Text>
         </div>
       </S.Container>
     </Container>
