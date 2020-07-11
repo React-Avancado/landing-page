@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const withPlugins = require('next-compose-plugins')
 const withPWA = require('next-pwa')
 const optimizedImages = require('next-optimized-images')
