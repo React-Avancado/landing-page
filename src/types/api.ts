@@ -95,6 +95,15 @@ export type SectionAgendaProps = {
   pricingBox: Price
 }
 
+export type PricingBoxProps = {
+  totalPrice: number
+  numberInstallments: number
+  priceInstallment: number
+  benefits: Array<{ benefit: string }>
+  buttonLabel: string
+  buttonUrl: string
+}
+
 export type SectionAboutUsProps = {
   title: string
   authors: Author[]
@@ -126,6 +135,7 @@ export type LandingPageProps = {
   sectionConcepts: SectionConceptsProps
   sectionModules: SectionModulesProps
   sectionAgenda: SectionAgendaProps
+  pricingBox: PricingBoxProps
   sectionAboutUs: SectionAboutUsProps
   sectionReviews: SectionReviewsProps
   sectionFaq: SectionFaqProps
