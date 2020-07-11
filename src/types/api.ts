@@ -1,33 +1,27 @@
 export type LogoProps = {
-  logo: {
-    url: string
-    alternativeText: string
-  }
+  url: string
+  alternativeText: string
 }
 
 export type HeaderProps = {
-  header: {
-    title: string
-    description: string
-    button: {
-      label: string
-      url: string
-    }
-    image: {
-      alternativeText: string
-      url: string
-    }
+  title: string
+  description: string
+  button: {
+    label: string
+    url: string
+  }
+  image: {
+    alternativeText: string
+    url: string
   }
 }
 
 export type SectionAboutProjectProps = {
-  sectionAboutProject: {
-    title: string
-    description: string
-    image: {
-      alternativeText: string
-      url: string
-    }
+  title: string
+  description: string
+  image: {
+    alternativeText: string
+    url: string
   }
 }
 
@@ -38,24 +32,32 @@ type TechIcon = {
   }
 }
 
+type Module = {
+  title: string
+  subtitle: string
+  description: string
+}
+
 export type SectionTechProps = {
-  sectionTech: {
-    title: string
-    techIcons: TechIcon[]
-  }
+  title: string
+  techIcons: TechIcon[]
 }
 
 export type SectionConceptsProps = {
-  sectionConcepts: {
-    title: string
-    concepts: Array<{ title: string }>
-  }
+  title: string
+  concepts: Array<{ title: string }>
+}
+
+export type SectionModulesProps = {
+  title: string
+  modules: Module[]
 }
 
 export type LandingPageProps = {
-  landingPage: LogoProps &
-    HeaderProps &
-    SectionAboutProjectProps &
-    SectionTechProps &
-    SectionConceptsProps
+  logo: LogoProps
+  header: HeaderProps
+  sectionAboutProject: SectionAboutProjectProps
+  sectionTech: SectionTechProps
+  sectionConcepts: SectionConceptsProps
+  sectionModules: SectionModulesProps
 }
