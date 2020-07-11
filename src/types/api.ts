@@ -38,6 +38,14 @@ type Module = {
   description: string
 }
 
+type Price = {
+  totalPrice: string
+  numberInstallments: string
+  benefits: string
+  buttonLabel: string
+  buttonUrl: string
+}
+
 export type SectionTechProps = {
   title: string
   techIcons: TechIcon[]
@@ -53,6 +61,12 @@ export type SectionModulesProps = {
   modules: Module[]
 }
 
+export type SectionAgendaProps = {
+  title: string
+  description: string
+  pricingBox: Price
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -60,4 +74,5 @@ export type LandingPageProps = {
   sectionTech: SectionTechProps
   sectionConcepts: SectionConceptsProps
   sectionModules: SectionModulesProps
+  sectionAgenda: SectionAgendaProps
 }
