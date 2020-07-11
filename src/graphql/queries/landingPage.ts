@@ -69,14 +69,19 @@ export const QUERY_LANDING_PAGE = /* GraphQL */ `
     sectionAgenda {
       title
       description
-      pricingBox {
-        totalPrice
-        numberInstallments
-        priceInstallment
-        benefits
-        buttonLabel
-        buttonUrl
+    }
+  }
+
+  fragment pricingBox on LandingPage {
+    pricingBox {
+      totalPrice
+      numberInstallments
+      priceInstallment
+      benefits {
+        benefit
       }
+      buttonLabel
+      buttonUrl
     }
   }
 
@@ -130,6 +135,7 @@ export const QUERY_LANDING_PAGE = /* GraphQL */ `
       ...sectionConcepts
       ...sectionModules
       ...sectionAgenda
+      ...pricingBox
       ...sectionAboutUs
       ...sectionReviews
       ...sectionFaq
