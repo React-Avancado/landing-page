@@ -1,1 +1,2 @@
-export const getImageUrl = (url) => `http://localhost:1337${url}`
+export const getImageUrl = (url) =>
+  `${process.env.NEXT_PUBLIC_IMAGE_HOST}${url}`

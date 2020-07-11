@@ -54,7 +54,7 @@ const Index = ({
 
 export const getStaticProps: GetStaticProps = async () => {
   const { landingPage } = await request(
-    'http://localhost:1337/graphql',
+    process.env.GRAPHQL_HOST,
     getLandingPage
   )
 
