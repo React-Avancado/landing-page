@@ -119,3 +119,4 @@ Temporary Items
 ## SW stuff
 public/sw.js
 public/workbox-*.js
+.env.local
