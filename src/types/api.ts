@@ -110,7 +110,15 @@ export type SectionFaqProps = {
   questions: Question[]
 }
 
+export type SeoProps = {
+  title: string
+  description: string
+  favicon: Photo
+  ogImage: Photo
+}
+
 export type LandingPageProps = {
+  seo: SeoProps
   logo: LogoProps
   header: HeaderProps
   sectionAboutProject: SectionAboutProjectProps

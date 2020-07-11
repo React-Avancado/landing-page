@@ -1,10 +1,8 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
+import { NextSeo } from 'next-seo'
 
 import { LandingPageProps } from 'types/api'
-
-import { request } from 'graphql-request'
-import { getLandingPage } from 'queries/getLandingPage'
 
 import SectionHero from 'components/SectionHero'
 import SectionAboutProject from 'components/SectionAboutProject'
@@ -19,6 +17,11 @@ import SectionFaq from 'components/SectionFaq'
 import Footer from 'components/Footer'
 import JsonSchema from 'components/JsonSchema'
 
+import client from 'graphql/client'
+import { QUERY_SEO } from 'graphql/queries/seo'
+import { QUERY_LANDING_PAGE } from 'graphql/queries/landingPage'
+import { getImageUrl } from 'utils/getImageUrl'
+
 const Index = ({
   logo,
   header,
@@ -29,10 +32,20 @@ const Index = ({
   sectionAgenda,
   sectionAboutUs,
   sectionReviews,
-  sectionFaq
+  sectionFaq,
+  seo
 }: LandingPageProps) => {
   return (
     <>
+      <NextSeo
+        title={seo.title}
+        description={seo.description}
+        openGraph={{
+          title: seo.title,
+          description: seo.description,
+          images: [{ url: getImageUrl(seo.ogImage.url) }]
+        }}
+      />
       <SectionHero logo={logo} header={header} />
       <SectionAboutProject {...sectionAboutProject} />
       <SectionTech {...sectionTech} />
@@ -53,14 +66,13 @@ const Index = ({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { landingPage } = await request(
-    process.env.GRAPHQL_HOST,
-    getLandingPage
-  )
+  const { landingPage } = await client.request(QUERY_LANDING_PAGE)
+  const { seo } = await client.request(QUERY_SEO)
 
   return {
     props: {
-      ...landingPage
+      ...landingPage,
+      seo
     }
   }
 }
