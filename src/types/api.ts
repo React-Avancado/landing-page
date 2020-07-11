@@ -63,6 +63,12 @@ export type Author = {
   description: string
 }
 
+export type Review = {
+  name: string
+  text: string
+  photo: Photo
+}
+
 export type SectionTechProps = {
   title: string
   techIcons: TechIcon[]
@@ -89,6 +95,11 @@ export type SectionAboutUsProps = {
   authors: Author[]
 }
 
+export type SectionReviewsProps = {
+  title: string
+  reviews: Review[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -98,4 +109,5 @@ export type LandingPageProps = {
   sectionModules: SectionModulesProps
   sectionAgenda: SectionAgendaProps
   sectionAboutUs: SectionAboutUsProps
+  sectionReviews: SectionReviewsProps
 }
