@@ -14,7 +14,7 @@ type Props = {
 
 const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
   useEffect(() => {
-    const texts = document.querySelectorAll('p.description')
+    const texts = document.querySelectorAll('.description > p')
 
     const observer = new ResizeObserver((entries) => {
       for (const entry of entries) {
@@ -39,7 +39,7 @@ const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
       </S.User>
       <S.Text>
         <input type="checkbox" id={`review-${id}`} />
-        <p
+        <div
           className="description"
           dangerouslySetInnerHTML={{ __html: description }}
         />

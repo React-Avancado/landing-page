@@ -71,7 +71,7 @@ export const Text = styled.blockquote`
       left: 0;
     }
 
-    > p {
+    p {
       padding-top: ${theme.spacings.small};
       display: -webkit-box;
       -webkit-line-clamp: 3;
