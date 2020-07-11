@@ -3,6 +3,8 @@ import React from 'react'
 import { GrGithub } from 'react-icons/gr'
 import { FaDribbble, FaTwitter } from 'react-icons/fa'
 
+import { getImageUrl } from 'utils/getImageUrl'
+
 import * as S from './styles'
 
 const icons = {
@@ -11,7 +13,7 @@ const icons = {
   dribbble: <FaDribbble />
 }
 
-type socialLinks = {
+type socialNetwork = {
   slug: string
   link: string
 }
@@ -20,34 +22,25 @@ type Props = {
   name: string
   role: string
   image: string
-  socialLinks: socialLinks[]
+  socialNetwork: socialNetwork[]
   description: string
 }
 
-const ProfileCard: React.FC<Props> = ({
+const ProfileCard = ({
   name,
   role,
   image,
-  socialLinks,
+  socialNetwork,
   description
-}) => (
+}: Props) => (
   <S.Card key={name}>
     <S.Image>
-      <source
-        srcSet={require(`@images/authors/${image}?webp`)}
-        type="image/webp"
-      />
-      <source srcSet={require(`@images/authors/${image}`)} type="image/png" />
-      <img
-        src={require(`@images/authors/${image}`)}
-        loading="lazy"
-        alt={name}
-      />
+      <img src={getImageUrl(image)} loading="lazy" alt={name} />
     </S.Image>
     <S.Name>{name}</S.Name>
     <S.Role>{role}</S.Role>
     <S.SocialLinks>
-      {socialLinks.map((item) => (
+      {socialNetwork.map((item) => (
         <S.Link key={item.link}>
           <a href={item.link} title={item.slug}>
             {icons[item.slug]}

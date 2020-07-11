@@ -46,6 +46,23 @@ type Price = {
   buttonUrl: string
 }
 
+type Photo = {
+  url: string
+}
+
+type SocialNetwork = {
+  title: string
+  url: string
+}
+
+export type Author = {
+  name: string
+  title: string
+  photo: Photo
+  socialNetwork: SocialNetwork[]
+  description: string
+}
+
 export type SectionTechProps = {
   title: string
   techIcons: TechIcon[]
@@ -67,6 +84,11 @@ export type SectionAgendaProps = {
   pricingBox: Price
 }
 
+export type SectionAboutUsProps = {
+  title: string
+  authors: Author[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -75,4 +97,5 @@ export type LandingPageProps = {
   sectionConcepts: SectionConceptsProps
   sectionModules: SectionModulesProps
   sectionAgenda: SectionAgendaProps
+  sectionAboutUs: SectionAboutUsProps
 }
