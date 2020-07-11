@@ -19,7 +19,7 @@ jobs:
         run: yarn lint
 
       - name: Check Buld
-        run: yarn build
+        run: env NODE_ENV=production yarn build
 
       - name: Run Tests
         run: yarn test
