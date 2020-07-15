@@ -26,7 +26,7 @@ const SectionFaq = () => (
           <p>
             Sem problemas! Você pode acessar qualquer uma das{' '}
             <a
-              href="https://willianjusten.com/about"
+              href="https://willianjusten.com.br/about"
               target="_blank"
               rel="noreferrer"
             >
