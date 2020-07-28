@@ -13,7 +13,7 @@ const Footer = () => (
         <a href="https://guilouro.dev"> Guilherme Louro</a>
       </p>
       <p>
-        Design por <a href="http://vmarcosp.dribbble.com/">Marcos Oliveira</a>
+        Design por <a href="https://dribbble.com/vmarcosp">Marcos Oliveira</a>
       </p>
     </Container>
   </S.Wrapper>
