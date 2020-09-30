@@ -15,7 +15,7 @@ const PricingBox = () => (
         De <span>R$549</span> por apenas
       </S.FullPrice>
       <S.DiscountPrice>
-        <span>6x de</span> R$67
+        <span>6x de</span> R$65
       </S.DiscountPrice>
     </S.Prices>
     <S.BenefitsList>
@@ -37,14 +37,14 @@ const PricingBox = () => (
     </S.BenefitsList>
 
     <Button
-      href="https://www.udemy.com/course/react-avancado/?couponCode=PROMOSET20"
+      href="https://www.udemy.com/course/react-avancado/?couponCode=PROMOOCT20"
       onClick={onClick}
       withPrice
     >
       <p>Comprar o curso</p>
       <div>
         <S.ButtonFullPrice>R$549</S.ButtonFullPrice>
-        <S.ButtonDiscountPrice>R$399</S.ButtonDiscountPrice>
+        <S.ButtonDiscountPrice>R$389</S.ButtonDiscountPrice>
       </div>
     </Button>
   </S.Box>
