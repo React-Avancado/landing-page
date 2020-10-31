@@ -23,7 +23,7 @@ const SectionHero = () => (
           </S.Description>
           <S.ButtonWrapper>
             <Button
-              href="https://www.udemy.com/course/react-avancado/?couponCode=PROMOOCT20"
+              href="https://www.udemy.com/course/react-avancado/?couponCode=PROMONOV20"
               onClick={onClick}
               wide
             >
