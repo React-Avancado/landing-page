@@ -22,7 +22,7 @@ const SectionAboutProject = () => (
           />
         </S.Image>
         <div>
-          <Heading>O que iremos construir</Heading>
+          <Heading reverseColor>O que iremos construir</Heading>
           <S.Text>
             <p>
               Iremos criar um e-commerce de jogos, incluindo toda a parte de

@@ -9,7 +9,9 @@ import * as S from './styles'
 const SectionConcepts = () => (
   <Container>
     <S.Box>
-      <Heading lineBottom>Conceitos que você irá aprender</Heading>
+      <Heading lineBottom reverseColor>
+        Conceitos que você irá aprender
+      </Heading>
       <S.List>
         {content.map((item) => (
           <S.Item key={item}>{item}</S.Item>

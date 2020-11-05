@@ -3,8 +3,8 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.footer`
   ${({ theme }) => css`
-    background: ${theme.colors.white};
-    color: ${theme.colors.gray};
+    background: ${theme.colors.secondaryBg};
+    color: ${theme.colors.white};
     text-align: center;
     font-size: 1.3rem;
     line-height: ${theme.font.sizes.xlarge};

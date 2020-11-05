@@ -21,11 +21,12 @@ export default {
     }
   },
   colors: {
-    primary: '#F231A5',
-    primaryHover: '#E20E8D',
-    secondary: '#3CD3C1',
-    mainBg: '#030518',
-    boxBg: '#FAFAFA',
+    primary: '#f5cb3b',
+    primaryHover: '#c5a22b',
+    secondary: '#f5cb3b',
+    mainBg: '#000',
+    secondaryBg: '#0f0f13',
+    boxBg: '#0c0c0e',
     texts: '#030517',
     white: '#FFFFFF',
     black: '#000000',

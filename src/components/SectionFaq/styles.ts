@@ -3,8 +3,8 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.white};
-    color: ${theme.colors.texts};
+    background: ${theme.colors.secondaryBg};
+    color: ${theme.colors.white};
     transform: skewY(4deg);
 
     ${media.greaterThan('medium')`

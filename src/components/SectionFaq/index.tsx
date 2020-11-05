@@ -10,19 +10,23 @@ const SectionFaq = () => (
   <S.Wrapper>
     <S.Content>
       <Container>
-        <Heading>FAQ</Heading>
+        <Heading reverseColor>FAQ</Heading>
 
         <S.Questions>
           {faq.map(({ question, answer }, index) => (
             <S.Question key={index}>
-              <Heading lineBottom>{question}</Heading>
+              <Heading lineBottom reverseColor>
+                {question}
+              </Heading>
               <div dangerouslySetInnerHTML={{ __html: answer }} />
             </S.Question>
           ))}
         </S.Questions>
 
         <S.ExtraQuestion>
-          <Heading lineBottom>Eu tenho outra dúvida!</Heading>
+          <Heading lineBottom reverseColor>
+            Eu tenho outra dúvida!
+          </Heading>
           <p>
             Sem problemas! Você pode acessar qualquer uma das{' '}
             <a

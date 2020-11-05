@@ -17,6 +17,7 @@ const SectionHero = () => (
 
       <S.Content>
         <S.TextBlock>
+          <S.HugeTitle>Black Friday</S.HugeTitle>
           <S.Title>React Avançado</S.Title>
           <S.Description>
             Crie aplicações reais com NextJS, Strapi, GraphQL e mais!

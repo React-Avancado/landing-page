@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 export const Card = styled.article`
   ${({ theme }) => css`
     border-radius: ${theme.border.radius};
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.secondaryBg};
     padding: ${theme.spacings.medium};
     text-align: center;
   `}
@@ -25,7 +25,7 @@ export const Name = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.bold};
-    color: ${theme.colors.black};
+    color: ${theme.colors.white};
   `}
 `
 
@@ -63,6 +63,6 @@ export const Link = styled.li`
 export const Description = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xxsmall};
-    color: ${theme.colors.texts};
+    color: ${theme.colors.white};
   `}
 `

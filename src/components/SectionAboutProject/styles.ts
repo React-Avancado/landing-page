@@ -4,8 +4,10 @@ import media from 'styled-media-query'
 export const Wrapper = styled.section`
   ${({ theme }) => css`
     display: flex;
-    background: ${theme.colors.white};
+    background: ${theme.colors.secondaryBg};
     transform: skewY(3deg);
+    border-top: 1rem solid ${theme.colors.primary};
+    border-bottom: 1rem solid ${theme.colors.primary};
 
     ${media.greaterThan('medium')`
       padding: ${theme.spacings.large} 0;
@@ -21,7 +23,7 @@ export const Container = styled.div`
     transform: skewY(-3deg);
 
     ${media.greaterThan('large')`
-    grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       padding: 0 ${theme.spacings.medium};
     `}
   `}
@@ -46,7 +48,7 @@ export const Text = styled.div`
     margin-top: ${theme.spacings.medium};
 
     p {
-      color: ${theme.colors.texts};
+      color: ${theme.colors.white};
       margin-bottom: ${theme.spacings.small};
     }
 

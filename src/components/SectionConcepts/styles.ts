@@ -3,8 +3,8 @@ import media from 'styled-media-query'
 
 export const Box = styled.section`
   ${({ theme }) => css`
-    color: ${theme.colors.black};
-    background-color: ${theme.colors.white};
+    color: ${theme.colors.white};
+    background-color: ${theme.colors.secondaryBg};
     padding: ${theme.spacings.small};
     border-radius: ${theme.border.radius};
 

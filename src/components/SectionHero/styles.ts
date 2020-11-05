@@ -48,6 +48,13 @@ export const Title = styled.h1`
   `}
 `
 
+export const HugeTitle = styled.h2`
+  ${({ theme }) => css`
+    font-size: min(8rem, 10vw);
+    font-weight: ${theme.font.bold};
+  `}
+`
+
 export const Description = styled.h2`
   ${({ theme }) => css`
     font-size: 2.2rem;
