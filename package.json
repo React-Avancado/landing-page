@@ -44,7 +44,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
-    "react-mailchimp-subscribe": "^2.1.0",
     "react-slick": "^0.26.1",
     "resize-observer-polyfill": "^1.5.1",
     "styled-components": "^5.1.1",
