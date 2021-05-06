@@ -33,11 +33,7 @@ const SectionFaq = () => (
               minhas redes sociais
             </a>{' '}
             ou entrar no{' '}
-            <a
-              href="https://willianjusten-cursos.slack.com/join/shared_invite/zt-g20h37hj-GnSb_y7PXCRjS92N9T8LCQ#/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="http://bit.ly/slack-will" target="_blank" rel="noreferrer">
               slack do nosso curso.
             </a>
           </p>
