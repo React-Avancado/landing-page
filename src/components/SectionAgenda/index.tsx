@@ -16,8 +16,7 @@ const SectionAgenda = () => (
 
       <p>
         Os módulos podem ser feitos em ordem ou você pode assistir conforme sua
-        necessidade, não tenha medo pelo tamanho do curso e utilize isso a seu
-        favor, sendo uma grande referência para dúvidas diárias.
+        necessidade.
       </p>
     </S.Text>
   </Container>
