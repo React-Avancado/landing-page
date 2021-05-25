@@ -20,7 +20,7 @@ const PricingBox = () => (
     </S.Prices>
     <S.BenefitsList>
       <S.BenefitsItem>
-        Acesso aos <strong>6 módulos</strong> assim que lançados
+        Acesso aos <strong>6 módulos</strong>
       </S.BenefitsItem>
 
       <S.BenefitsItem>
