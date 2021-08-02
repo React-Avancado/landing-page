@@ -37,7 +37,7 @@ const PricingBox = () => (
     </S.BenefitsList>
 
     <Button
-      href="https://www.udemy.com/course/react-avancado/?couponCode=PROMOJUL21"
+      href="https://www.udemy.com/course/react-avancado/?couponCode=PROMOAGO21"
       onClick={onClick}
       withPrice
     >
