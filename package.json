@@ -37,7 +37,7 @@
   "dependencies": {
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
-    "next": "^9.4.4",
+    "next": "^11.1.0",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.1",
     "next-seo": "^4.5.0",
