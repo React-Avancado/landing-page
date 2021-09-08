@@ -15,7 +15,7 @@ const PricingBox = () => (
         De <span>R$549</span> por apenas
       </S.FullPrice>
       <S.DiscountPrice>
-        <span>6x de</span> R$49
+        <span>6x de</span> R$75
       </S.DiscountPrice>
     </S.Prices>
     <S.BenefitsList>
@@ -44,7 +44,7 @@ const PricingBox = () => (
       <p>Comprar o curso</p>
       <div>
         <S.ButtonFullPrice>R$549</S.ButtonFullPrice>
-        <S.ButtonDiscountPrice>R$299</S.ButtonDiscountPrice>
+        <S.ButtonDiscountPrice>R$449</S.ButtonDiscountPrice>
       </div>
     </Button>
   </S.Box>
