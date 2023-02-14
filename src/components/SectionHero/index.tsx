@@ -24,7 +24,7 @@ const SectionHero = () => (
           <S.Warning>⚠️ Atenção: Suporte ao curso finalizado!</S.Warning>
           <S.ButtonWrapper>
             <Button
-              href="https://www.udemy.com/course/react-avancado/?couponCode=SEMPREBARATO"
+              href="https://www.udemy.com/course/react-avancado/?couponCode=C6DFF6069B10A28BA2BC"
               onClick={onClick}
               wide
             >
