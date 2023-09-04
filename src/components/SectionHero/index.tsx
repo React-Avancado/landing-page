@@ -21,7 +21,6 @@ const SectionHero = () => (
           <S.Description>
             Crie aplicações reais com NextJS, Strapi, GraphQL e mais!
           </S.Description>
-          <S.Warning>⚠️ Atenção: Suporte ao curso finalizado!</S.Warning>
           <S.ButtonWrapper>
             <Button
               href="https://www.udemy.com/course/react-avancado/?couponCode=STRAPI4"
