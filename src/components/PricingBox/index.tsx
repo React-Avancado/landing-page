@@ -24,6 +24,10 @@ const PricingBox = () => (
       <S.BenefitsItem>
         Código de <strong>todo o projeto</strong> separado em commits
       </S.BenefitsItem>
+
+      <S.BenefitsItem>
+        Atenção: <strong>suporte finalizado</strong> pelos instrutores
+      </S.BenefitsItem>
     </S.BenefitsList>
 
     <Button
